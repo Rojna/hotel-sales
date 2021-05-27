@@ -1,0 +1,127 @@
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(./fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+
+h4,
+h4.benefits-header,
+button {
+    font-family: Montserrat-Medium,"Verdana",sans-serif;
+    color: #050033;
+    font-weight: 600;
+    font-size: 1.7689rem;
+}
+
+p,
+div {
+    font-family: Montserrat-Light,"Verdana",sans-serif;
+    color: #74758c;
+    font-size: 1rem;
+}
+
+sup,
+.disclaimer {
+    color: #FF0000;
+}
+
+button.btn {
+    background-color: #050033;
+    border: #050033;
+    text-transform: uppercase;
+    font-size: .875rem;
+}
+
+button.btn:hover {
+    background-color: #557b97;
+    border: #557b97;
+    
+}
+
+button.btn-secondary {
+    background-color: #74758c;
+    border: #74758c;
+}
+
+.banner {
+    width: 100%;
+    /*background-color: red;*/
+    height: 25vw;
+    /*background-image: url(../images/banners/Membership_page\ banner_1650x553_March-2019.png);*/
+    /*background-image: url(../images/banners/Partnership-join-banner_1650x410_May-2019.jpg);*/
+    background-image: url(../images/banners/Hotel_pool.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+}
+
+/**
+*     START Accordion Styles
+**/
+.benefits-header-container {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.benefits-header {
+    /*padding: 0;*/
+}
+
+.card {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #CCCCCC;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.card h5 {
+    text-align: left;
+    padding: 0;
+}
+
+.card h5 button {
+    padding: 0;
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+}
+
+.card-header {
+    padding: 10px 0;
+    border-bottom: none;
+    background-color: transparent;
+    
+}
+
+.card-body {
+    padding: 10px 15px;
+}
+
+/**
+  *     END Accordion Styles
+  */
+
+#hotelNameForm {
+    height: 300px;
+    overflow-y: auto;
+}
+
+.error {
+    color: #FF0000;
+    font-size: 12px;
+    display: none;
+}
+
+.form-group {
+    /*padding-left: 0;*/
+}
