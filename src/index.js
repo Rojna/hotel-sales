@@ -1,13 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
-import '../src/styles/main.css';
-import App from './App';
+
+import './css/bootstrap.min.css';
+
+import Home from './components/Home';
+// import EmployeeDetail from './components/EmployeeDetail';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    <Router>
+        <Switch>
+            <Route path="/" exact component={Home}/>
+            {/* <Route path="/employee-details" component={EmployeeDetail}/> */}
+        </Switch>
+    </Router>
+    , document.getElementById('root'));
+    
 

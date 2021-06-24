@@ -1,11 +1,12 @@
 
 import {GLOBALHEADER_MESSAGE} from "../constant";
+import logo from "../images/Accor-Plus-logo_2019.png";
 
 const Header = (props) => { 
     return (
         <div>
-            <div className="d-flex justify-content-between container">
-                <img src="../images/Accor-Plus-logo_2019.png" width="200" alt="Accor Plus Logo"/>
+            <div className="d-flex justify-content-between container my-3">
+                <img src={logo} width="200" alt="Accor Plus Logo"/>
                 <button id="btnLeaderBoard" type="button" className="btn btn-primary d-none">
                     <i className="fas fa-clipboard-list"></i> Leader Board
                 </button>

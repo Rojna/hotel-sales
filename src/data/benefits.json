@@ -1,0 +1,2680 @@
+[
+    {
+        "au": {
+            "title": "Benefits at a glance",
+            "products": {
+                "traveller": {
+                    "priceOld": "NA",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "$399 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                },
+                "discovery": {
+                    "priceOld": "$495 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Discovery"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus complimentary night",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "discovery": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-au/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor All app and book your next trip on your Members' Rate.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-au/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Enjoy savings of up to 50% on room rates with Red Hot Room offers",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-au/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Member exclusive More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Unwind with Accor Plus member exclusive packages. From all-inclusive dining to spa treatments, our More Escapes packages include everything you need for an unforgettable holiday.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-au/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Early access to Accor global sales",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales two days in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Up to 50% off dining across Asia Pacific",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Savour culinary delights from around the world at over 1,400 hotel restaurants across 20 countries. Your Accor Plus membership brings you up to 50% off the food bill and 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-au/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "15% off drinks in Asia",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-au/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Member exclusive events and experiencess",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Meet and greet your sporting idols, congratulate the cast members of the latest theatre sensation in person, learn how to slice, dice and sauté with a Masterchef. Do things you’ve never done before – thanks to your Accor Plus membership.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-au/benefits/inspiration'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Automatic qualification for Elite Silver status in ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Be rewarded with Elite Silver status membership in ALL - Accor Live Limitless, Accor's global lifestyle loyalty programme. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-au/benefits/more-rewards'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "Discovery",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Accor Plus Discovery is a new level of More, offering incredible savings, rewards and experiences globally. Amazing cruise, tour and wine offers worldwide, all made even more affordable with Discovery Dollars earned booking flights on our portal.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-au/experience/discovery-new-member'>Learn more</a>"
+                }
+            ]
+        }
+    },
+
+    {
+        "cn": {
+            "title": "Benefits at a glance",
+            "products": {
+                "traveller": {
+                    "priceOld": "NA",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                },
+                "discovery": {
+                    "priceOld": "",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer Plus"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus complimentary night",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "discovery": {
+                        "content": "2 nights",
+                        "image": ""
+                    },
+                    "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-cn/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-cn/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-cn/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Member exclusive More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Unwind with Accor Plus member exclusive packages. From all-inclusive dining to spa treatments, our More Escapes packages include everything you need for an unforgettable holiday.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-cn/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Early access to global Accor promotions",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Savour culinary delights from around the world at over 1,400 hotel restaurants across 20 countries. Your Accor Plus membership brings you up to 50% off the food bill and 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-cn/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "15% off your drinks bill in Asia",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-cn/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Meet and greet your sporting idols, congratulate the cast members of the latest theatre sensation in person, learn how to slice, dice and sauté with a Masterchef. Do things you’ve never done before – thanks to your Accor Plus membership.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-cn/benefits/inspiration'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Automatic qualification for Elite Silver status in ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Be rewarded with Elite Silver status membership in ALL - Accor Live Limitless, Accor's global lifestyle loyalty programme. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-cn/benefits/more-rewards'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "AVAILABLE MEMBERSHIP TYPES",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Choose your preferred membership type and join Accor Plus today.",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+
+    {
+        "fj": {
+            "title": "Benefits at a glance",
+            "products": {
+                "traveller": {
+                    "priceOld": "NA",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus complimentary night",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-fj/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-fj/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Member exclusive More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Unwind with Accor Plus member exclusive packages. From all-inclusive dining to spa treatments, our More Escapes packages include everything you need for an unforgettable holiday.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-fj/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-fj/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Early access to global Accor promotions",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Savour culinary delights from around the world at over 1,400 hotel restaurants across 20 countries. Your Accor Plus membership brings you up to 50% off the food bill and 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-fj/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "15% off your drinks bill in Asia",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-fj/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Meet and greet your sporting idols, congratulate the cast members of the latest theatre sensation in person, learn how to slice, dice and sauté with a Masterchef. Do things you’ve never done before – thanks to your Accor Plus membership.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-fj/benefits/inspiration'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Automatic qualification for Elite Silver status in ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Be rewarded with Elite Silver status membership in ALL - Accor Live Limitless, Accor's global lifestyle loyalty programme. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-fj/benefits/more-rewards'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "AVAILABLE MEMBERSHIP TYPES",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Choose your preferred membership type and join Accor Plus today.",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+    {
+        "hk": {
+            "title": "Benefits at a glance",
+            "products": {
+                "traveller": {
+                    "priceOld": "NA",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                },
+                "discovery": {
+                    "priceOld": "",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer Plus"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus complimentary night",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "discovery": {
+                        "content": "2 nights",
+                        "image": ""
+                    },
+                    "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-hk/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-hk/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-hk/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Member exclusive More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Unwind with Accor Plus member exclusive packages. From all-inclusive dining to spa treatments, our More Escapes packages include everything you need for an unforgettable holiday.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-hk/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Early access to global Accor promotions",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Savour culinary delights from around the world at over 1,400 hotel restaurants across 20 countries. Your Accor Plus membership brings you up to 50% off the food bill and 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-hk/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "15% off your drinks bill in Asia",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-hk/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Meet and greet your sporting idols, congratulate the cast members of the latest theatre sensation in person, learn how to slice, dice and sauté with a Masterchef. Do things you’ve never done before – thanks to your Accor Plus membership.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-hk/benefits/inspiration'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Automatic qualification for Elite Silver status in ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Be rewarded with Elite Silver status membership in ALL - Accor Live Limitless, Accor's global lifestyle loyalty programme. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-hk/benefits/more-rewards'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "AVAILABLE MEMBERSHIP TYPES",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Choose your preferred membership type and join Accor Plus today.",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+    {
+        "in": {
+            "title": "Benefits at a glance",
+            "products": {
+                "traveller": {
+                    "priceOld": "NA",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "INR 15,222 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus complimentary night",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-in/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-in/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-in/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Member exclusive More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Unwind with Accor Plus member exclusive packages. From all-inclusive dining to spa treatments, our More Escapes packages include everything you need for an unforgettable holiday. ",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-in/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Early access to global Accor promotions",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Savour culinary delights from around the world at over 1,400 hotel restaurants across 20 countries. Your Accor Plus membership brings you up to 50% off the food bill and 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-in/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "15% off your drinks bill in Asia",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-in/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Meet and greet your sporting idols, congratulate the cast members of the latest theatre sensation in person, learn how to slice, dice and sauté with a Masterchef. Do things you’ve never done before – thanks to your Accor Plus membership.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-in/benefits/inspiration'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Automatic qualification for Elite Silver status in ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Be rewarded with Silver status membership in ALL - Accor Live Limitless. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-in/benefits/more-rewards'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "MEMBERSHIP PRICE PER YEAR",
+                    "traveller": {
+                        "content": "NA",
+                        "image": ""
+                    },
+                    "explorer": {
+                        "content": "INR 15,222",
+                        "image": ""
+                    },
+                    "description": "Choose your preferred membership type and join Accor Plus today.",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+    {
+        "id": {
+            "title": "Sekilas Manfaat",
+            "products": {
+                "explorer": {
+                    "priceOld": "IDR 2,755,000",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus",
+                    "explorer": {
+                        "content": "1 malam",
+                        "image": ""
+                    },
+                    "description": "Manfaat Stay Plus memberi Anda hak untuk menginap satu malam gratis setiap tahun di salah satu dari lebih dari 1.000 hotel dan resor Accor yang berpartisipasi. Mulai dari kota hingga ke pantai, dari kelas ekonomi hingga yang mewah, gunakan keuntungan Anda untuk menginap gratis.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/id-id/benefits/more-nights'>Info lanjut</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Harga Member Eksklusif dengan diskon 10% dari tarif kamar terbaik yang tersedia",
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Nikmati lebih banyak malam dengan harga lebih murah dengan mengakses Harga Member eksklusif untuk Accor Plus sepanjang tahun. Lihat daftar hotel atau aplikasi Accor All dan pesan perjalanan Anda berikutnya dengan Harga Member Anda.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/id-id/benefits/more-nights'>Info lanjut</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Hemat hingga 50% untuk tarif kamar dengan penawaran Red Hot Room",
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Hemat hingga 50% dengan penawaran khusus kamar kami. Eksklusif untuk member Accor Plus, Red Hot Room menawarkan penghematan besar di hotel dan resor Accor yang berpartisipasi di seluruh Asia Pasifik.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/id-id/benefits/more-nights'>Info lanjut</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Paket Eksklusif More Escape untuk member",
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Bersantai dengan paket eksklusif member Accor Plus. Mulai dari santapan lengkap hingga perawatan spa, paket More Escapes kami mencakup semua yang Anda butuhkan untuk liburan yang tak terlupakan.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/id-id/benefits/more-nights'>Info lanjut</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Akses awal ke Accor Global Sales",
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Selain itu, keanggotaan Accor Plus Anda memberi Anda akses awal ke Accor Global Sales. Anda tidak hanya dapat mengakses Accor Super Sale dan Private Sale satu hari sebelumnya, Anda juga akan menikmati tambahan diskon 10% dari tarif promosi.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Diskon hingga 50% untuk bersantap di seluruh Asia Pasifik",
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Nikmati kelezatan kuliner dari seluruh dunia di lebih dari 1.400 restoran hotel di 20 negara. Keanggotaan Accor Plus Anda memberi Anda diskon hingga 50% untuk tagihan makanan dan diskon 15% untuk minuman di Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/id-id/benefits/more-flavours'>Info lanjut</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "Diskon 15% untuk minuman di Asia",
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Nikmati diskon 15% untuk tagihan minuman Anda di restoran dan bar hotel Accor yang berpartisipasi di seluruh Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/id-id/benefits/more-flavours'>Info lanjut</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Acara dan pengalaman eksklusif untuk member",
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Temui dan sapa idola olahraga Anda, ucapkan selamat kepada pemeran sensasi teater terbaru secara langsung, pelajari cara mengiris, memotong, dan menumis dengan Masterchef. Lakukan hal-hal yang belum pernah Anda lakukan sebelumnya - berkat keanggotaan Accor Plus Anda.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/id-id/benefits/inspiration'>Info lanjut</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Kualifikasi otomatis untuk status Elite Silver di ALL - Accor Live Limitless",
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Dapatkan status keanggotaan Elite Silver di ALL - Accor Live Limitless, program loyalitas gaya hidup global Accor. Baik Anda bepergian untuk bisnis atau liburan, setiap malam yang Anda habiskan di properti Accor memberi Anda poin untuk pengalaman perjalanan yang lebih berkesan.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/id-id/benefits/more-rewards'>Info lanjut</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "HARGA KEANGGOTAAN",
+                    "explorer": {
+                        "content": "IDR 2,755,000",
+                        "image": ""
+                    },
+                    "description": "Bergabung dengan Accor Plus hari ini",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+    {
+        "mo": {
+            "title": "Benefits at a glance",
+            "products": {
+                "traveller": {
+                    "priceOld": "NA",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus complimentary night",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/zh-mo/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/zh-mo/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/zh-mo/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Member exclusive More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Unwind with Accor Plus member exclusive packages. From all-inclusive dining to spa treatments, our More Escapes packages include everything you need for an unforgettable holiday.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/zh-mo/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Early access to global Accor promotions",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Savour culinary delights from around the world at over 1,400 hotel restaurants across 20 countries. Your Accor Plus membership brings you up to 50% off the food bill and 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/zh-mo/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "15% off your drinks bill in Asia",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/zh-mo/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Meet and greet your sporting idols, congratulate the cast members of the latest theatre sensation in person, learn how to slice, dice and sauté with a Masterchef. Do things you’ve never done before – thanks to your Accor Plus membership.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/zh-mo/benefits/inspiration'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Automatic qualification for Elite Silver status in ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Be rewarded with Elite Silver status membership in ALL - Accor Live Limitless, Accor's global lifestyle loyalty programme. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/zh-mo/benefits/more-rewards'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "MEMBERSHIP TYPES AVAILABLE",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Choose your preferred membership type and join Accor Plus today.",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+    {
+        "my": {
+            "title": "Benefits at a glance",
+            "products": {
+                "traveller": {
+                    "priceOld": "MYR 540",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus complimentary night",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-my/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor All app and book your next trip on your Members' Rate.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-my/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Enjoy savings of up to 50% on room rates with Red Hot Room offers",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-my/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Member exclusive More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Unwind with Accor Plus member exclusive packages. From all-inclusive dining to spa treatments, our More Escapes packages include everything you need for an unforgettable holiday.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-my/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Early access to Accor global sales",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Up to 50% off dining across Asia Pacific",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Savour culinary delights from around the world at over 1,400 hotel restaurants across 20 countries. Your Accor Plus membership brings you up to 50% off the food bill and 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-my/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "15% off your drinks in Asia",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-my/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Member exclusive events and experiences",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Meet and greet your sporting idols, congratulate the cast members of the latest theatre sensation in person, learn how to slice, dice and sauté with a Masterchef. Do things you’ve never done before – thanks to your Accor Plus membership.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-my/benefits/inspiration'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Automatic qualification for Elite Silver status in ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Be rewarded with Silver status membership in ALL - Accor Live Limitless. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-my/benefits/more-rewards'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "MEMBERSHIP PRICE PER YEAR",
+                    "traveller": {
+                        "content": "MYR 540",
+                        "image": ""
+                    },
+                    "description": "Join Accor Plus today.",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+    {
+        "nz": {
+            "title": "Benefits at a glance",
+            "products": {
+                "traveller": {
+                    "priceOld": "$299 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "$399 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                },
+                "discovery": {
+                    "priceOld": "$495 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Discovery"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus complimentary night",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "discovery": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-nz/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-nz/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Member exclusive More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Unwind with Accor Plus member exclusive packages. From all-inclusive dining to spa treatments, our More Escapes packages include everything you need for an unforgettable holiday.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-nz/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-nz/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Early access to global Accor promotions",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Savour culinary delights from around the world at over 1,400 hotel restaurants across 20 countries. Your Accor Plus membership brings you up to 50% off the food bill and 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-nz/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "15% off your drinks bill in Asia",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-nz/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Meet and greet your sporting idols, congratulate the cast members of the latest theatre sensation in person, learn how to slice, dice and sauté with a Masterchef. Do things you’ve never done before – thanks to your Accor Plus membership.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-nz/benefits/inspiration'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Automatic qualification for Elite Silver status in ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Be rewarded with Elite Silver status membership in ALL - Accor Live Limitless, Accor's global lifestyle loyalty programme. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-nz/benefits/more-rewards'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "Discovery",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Accor Plus Discovery is a new level of More, offering incredible savings, rewards and experiences globally. Amazing cruise, tour and wine offers worldwide, all made even more affordable with Discovery Dollars earned booking flights on our portal.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-nz/experience/discovery-new-member'>Discover more</a>"
+                },
+                {
+                    "hid": "benefit11",
+                    "cid": "benefitc11",
+                    "subtitle": "MEMBERSHIP PRICE PER YEAR",
+                    "traveller": {
+                        "content": "$299",
+                        "image": ""
+                    },
+                    "explorer": {
+                        "content": "$399",
+                        "image": ""
+                    },
+                    "discovery": {
+                        "content": "$495",
+                        "image": ""
+                    },
+                    "description": "Choose your membership type and click the join now button to sign up today.",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+    {
+        "ph": {
+            "title": "Benefits at a glance",
+            "products": {
+                "traveller": {
+                    "priceOld": "PHP 7,200 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "PHP 9,600 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus complimentary night",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-ph/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-ph/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-ph/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Member exclusive More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Unwind with Accor Plus member exclusive packages. From all-inclusive dining to spa treatments, our More Escapes packages include everything you need for an unforgettable holiday.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-ph/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Early access to global Accor promotions",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Savour culinary delights from around the world at over 1,400 hotel restaurants across 20 countries. Your Accor Plus membership brings you up to 50% off the food bill and 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-ph/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "15% off your drinks bill in Asia",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-ph/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Meet and greet your sporting idols, congratulate the cast members of the latest theatre sensation in person, learn how to slice, dice and sauté with a Masterchef. Do things you’ve never done before – thanks to your Accor Plus membership.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-ph/benefits/inspiration'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Automatic qualification for Elite Silver status in ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Be rewarded with Silver status membership in ALL - Accor Live Limitless. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-ph/benefits/more-rewards'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "MEMBERSHIP PRICE PER YEAR",
+                    "traveller": {
+                        "content": "PHP 7,200 per year",
+                        "image": ""
+                    },
+                    "explorer": {
+                        "content": "PHP 9,600 per year",
+                        "image": ""
+                    },
+                    "description": "Choose your preferred membership type and join Accor Plus today.",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+    {
+        "row": {
+            "title": "Benefits at a glance",
+            "products": {
+                "traveller": {
+                    "priceOld": "US$ 225 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "US$ 295 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus complimentary night",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Member exclusive More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Unwind with Accor Plus member exclusive packages. From all-inclusive dining to spa treatments, our More Escapes packages include everything you need for an unforgettable holiday.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Early access to global Accor promotions",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Savour culinary delights from around the world at over 1,400 hotel restaurants across 20 countries. Your Accor Plus membership brings you up to 50% off the food bill and 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "15% off your drinks bill in Asia",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Meet and greet your sporting idols, congratulate the cast members of the latest theatre sensation in person, learn how to slice, dice and sauté with a Masterchef. Do things you’ve never done before – thanks to your Accor Plus membership.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en/benefits/inspiration'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Automatic qualification for Elite Silver status in ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Be rewarded with Elite Silver status membership in ALL - Accor Live Limitless, Accor's global lifestyle loyalty programme. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en/benefits/more-rewards'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "MEMBERSHIP PRICE PER YEAR",
+                    "traveller": {
+                        "content": "US$ 225",
+                        "image": ""
+                    },
+                    "explorer": {
+                        "content": "US$ 295",
+                        "image": ""
+                    },
+                    "description": "Choose your preferred membership type and join Accor Plus today.",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+    {
+        "sg": {
+            "title": "Benefits at a glance",
+            "products": {
+                "traveller": {
+                    "priceOld": "$298 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "$408 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                },
+                "discovery": {
+                    "priceOld": "$528 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer Plus"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus complimentary night",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "discovery": {
+                        "content": "2 nights",
+                        "image": ""
+                    },
+                    "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-sg/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-sg/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-sg/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Member exclusive More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Unwind with Accor Plus member exclusive packages. From all-inclusive dining to spa treatments, our More Escapes packages include everything you need for an unforgettable holiday.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-sg/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Early access to global Accor promotions",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Savour culinary delights from around the world at over 1,400 hotel restaurants across 20 countries. Your Accor Plus membership brings you up to 50% off the food bill and 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-sg/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "15% off your drinks bill in Asia",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-sg/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Meet and greet your sporting idols, congratulate the cast members of the latest theatre sensation in person, learn how to slice, dice and sauté with a Masterchef. Do things you’ve never done before – thanks to your Accor Plus membership.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-sg/benefits/inspiration'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Automatic qualification for Elite Silver status in ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "discovery": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Be rewarded with Elite Silver status membership in ALL - Accor Live Limitless, Accor's global lifestyle loyalty programme. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-sg/benefits/more-rewards'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "MEMBERSHIP PRICE PER YEAR",
+                    "traveller": {
+                        "content": "$298",
+                        "image": ""
+                    },
+                    "explorer": {
+                        "content": "$408",
+                        "image": ""
+                    },
+                    "discovery": {
+                        "content": "$528",
+                        "image": ""
+                    },
+                    "description": "Choose your membership type and click the join now button to sign up today.",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+    {
+        "tw": {
+            "title": "Benefits at a glance",
+            "products": {
+                "traveller": {
+                    "priceOld": "",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Stay Plus complimentary night",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": "1 night",
+                        "image": ""
+                    },
+                    "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-tw/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-tw/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Member exclusive More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Unwind with Accor Plus member exclusive packages. From all-inclusive dining to spa treatments, our More Escapes packages include everything you need for an unforgettable holiday.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-tw/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-tw/benefits/more-nights'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Early access to global Accor promotions",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Savour culinary delights from around the world at over 1,400 hotel restaurants across 20 countries. Your Accor Plus membership brings you up to 50% off the food bill and 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-tw/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "15% off your drinks bill in Asia",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-tw/benefits/more-flavours'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Meet and greet your sporting idols, congratulate the cast members of the latest theatre sensation in person, learn how to slice, dice and sauté with a Masterchef. Do things you’ve never done before – thanks to your Accor Plus membership.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-tw/benefits/inspiration'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Automatic qualification for Elite Silver status in ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Be rewarded with Elite Silver status membership in ALL - Accor Live Limitless, Accor's global lifestyle loyalty programme. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-tw/benefits/more-rewards'>Learn more</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "MEMBERSHIP PRICE PER YEAR",
+                    "traveller": {
+                        "content": "US$ 225",
+                        "image": ""
+                    },
+                    "explorer": {
+                        "content": "US$ 295",
+                        "image": ""
+                    },
+                    "description": "Choose your preferred membership type and join Accor Plus today.",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+    {
+        "th": {
+            "title": "สิทธิประโยชน์",
+            "products": {
+                "traveller": {
+                    "priceOld": "THB 5,000 บาท",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "ห้องพักฟรี 1 คืน (Stay Plus)",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "description": "มอบห้องพักฟรีหนึ่งคืนต่อปีกับสิทธิประโยชน์ Stay Plus ที่โรงแรมและรีสอร์ตของ Accor ที่เข้าร่วมรายการกว่า 1,000 แห่งให้กับคุณ ตั้งแต่เมืองใหญ่ไปจนถึงริมทะเล และแบบประหยัดไปจนถึงหรูหรา ใช้สิทธิประโยชน์เข้าพักของคุณฟรีได้ตามต้องการ",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/th-th/benefits/more-nights'>อ่านเพิ่มเติม</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "ส่วนลดสำหรับสมาชิก 10% จากอัตราค่าห้องพักที่ดีที่สุด",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "เข้าพักมากขึ้นแต่จ่ายน้อยลงด้วยราคาห้องพักสำหรับสมาชิก Accor Plus โดยเฉพาะตลอดปี ดูรายชื่อโรงแรมหรือ Accor App และจองทริปต่อไปของคุณในราคาสมาชิก ",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/th-th/benefits/more-nights'>อ่านเพิ่มเติม</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "เพลิดเพลินกับส่วนลดค่าหัองพักสูงสุด 50% กับ Red Hot Rooms",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "ประหยัดค่าโรงแรมหรือรีสอร์ตมากถึง 50% กับข้อเสนอ Red Hot Rooms พิเศษเฉพาะสมาชิก Accor Plus ข้อเสนอ Red Hot Rooms มอบส่วนลดมากมายที่โรงแรม Accor หลายแห่งในเอเชีย แปซิฟิก",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/th-th/benefits/more-nights'>อ่านเพิ่มเติม</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "ข้อเสนอพิเศษ More Escapes packages",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "ผ่อนคลายกับข้อเสนอพิเศษสำหรับสมาชิกแอคคอร์ พลัส ตั้งแต่ข้อเสนอที่รวมทั้งอาหารไปจนถึงสปา More Escapes ได้รวมทุกอย่างให้วันพักผ่อนของคุณน่าจดจำไม่รู้ลืม",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/th-th/benefits/more-nights'>อ่านเพิ่มเติม</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "จองข้อเสนอส่วนลดจาก Accor ทั่วโลกก่อนใคร",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "ยิ่งไปกว่านั้น สมาชิก Accor Plus สามารถเข้าถึง Accor Global Sales ก่อนใคร ไม่เพียงแต่คุณจะเข้าถึงการลดราคา Accor Super และ Private ล่วงหน้าสองวันแล้ว แต่คุณยังจะได้รับส่วนลดจากราคาโปรโมชั่นเพิ่มอีก 10% ด้วย ",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "ส่วนลดค่าอาหารสูงสุด 50% ในเอเชีย แปซิฟิก",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "ชิมอาหารรสเด็ดจากทั่วโลกได้ที่ห้องอาหารกว่า 1,400 แห่ง ใน 20 ประเทศ สมาชิก Accor Plus ได้รับส่วนลดค่าอาหารมากถึง 50% และเครื่องดื่มอีก 15% ในเอเชีย",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/th-th/benefits/more-flavours'>อ่านเพิ่มเติม</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "ส่วนลดค่่าเครื่องดื่ม 15% ในเอเชีย",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "ส่วนลดค่าเครื่องดื่ม 15% ที่ห้องอาหารและบาร์ของโรงแรมที่น่วมรายการในเอเชีย",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/th-th/benefits/more-flavours'>อ่านเพิ่มเติม</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "กิจกรรมสุดเอ็กซ์คลูซีฟสำหรับสมาชิก",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "กระทบไหล่นักกีฬาในดวงใจ ชื่นชมการแสดงละครเวทีอย่างใกล้ชิด เรียนรู้วิธีทำอาหารรสเลิศกับมาสเตอร์เชฟ ทำสิ่งที่คุณยังไม่เคยทำมาก่อนกับบัตรสมาชิก Accor Plus",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/th-th/benefits/inspiration'>อ่านเพิ่มเติม</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "ปรับสถานภาพสมาชิกเป็น ELITE SILVER โดยอัตโนมัติจาก ALL- ACCOR LIVE LIMITLESS",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "รับรางวัลสมาชิกสถานะ Elite Silver ใน ALL- Accor Live Limitless โปรแกรมใหม่แนวไลฟ์สไตล์สำหรับลูกค้า ไม่ว่าคุณจะเดินทางเพื่อทำงานหรือพักผ่อน ทุกคืนที่คุณเข้าพักกับ Accor คุณจะได้รับคะแนนเพื่อประสบการณ์การเดินทางที่น่าจดจำยิ่งขึ้นไปอีกในครั้งต่อๆ ไป",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/th-th/benefits/more-rewards'>อ่านเพิ่มเติม</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "ราคาสมาชิกต่อปี",
+                    "traveller": {
+                        "content": "THB 5,000 บาท",
+                        "image": ""
+                    },
+                    "description": "สมัครสมาชิกวันนี้",
+                    "learnmore": ""
+                }
+            ]
+        }
+    },
+    {
+        "vn": {
+            "title": "Tóm tắt quyền lợi hội viên",
+            "products": {
+                "traveller": {
+                    "priceOld": "VND 4,500,000 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "VND 6,000,000 per year",
+                    "price": "",
+                    "image": "<img src='src/images/cbimage.jpg' width='50' />",
+                    "name": "Explorer"
+                }
+            },
+            "benefits": [
+                {
+                    "hid": "benefit1",
+                    "cid": "benefitc1",
+                    "subtitle": "Đêm nghỉ miễn phí Stay Plus",
+                    "traveller": {
+                        "content": false,
+                        "image": "<img src='src/images/open-iconic/png/x-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": "1 đêm miễn phí",
+                        "image": ""
+                    },
+                    "description": "Với Stay Plus, bạn sẽ có một đêm nghỉ miễn phí hàng năm tại 1 trong hơn 1000 khách sạn và khu nghỉ dưỡng của Accor. Từ các thành phố lớn đến vùng biển thanh bình, từ dòng khách sạn phổ thông đến dòng cao cấp, hãy sử dụng quyền lợi này để tận hưởng đêm miễn phí.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-vn/benefits/more-nights'>Xem thêm</a>"
+                },
+                {
+                    "hid": "benefit2",
+                    "cid": "benefitc2",
+                    "subtitle": "Đặt phòng với giá hội viên giảm tối thiểu 10% trên giá phòng tốt nhất trong ngày",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Bạn có thể lưu trú nhiều hơn với chi phí thấp hơn với giá phòng dành cho hội viên. Tham khảo danh sách khách sạn hoặc ứng dụng Accor All và đặt phòng cho chuyến đi kế tiếp với mức giá vô cùng hấp dẫn.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-vn/benefits/more-nights'>Xem thêm</a>"
+                },
+                {
+                    "hid": "benefit3",
+                    "cid": "benefitc3",
+                    "subtitle": "Giảm lên đến 50% giá phòng với ưu đãi Red Hot Room",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Với ưu đãi này, bạn có thể tiết kiệm lên đến 50% giá phòng. Dành riêng cho hội viên Accor Plus, Red Hot Room giúp bạn tiết kiệm chi phí lưu trú tại các khách sạn và khu nghỉ dưỡng của Accor ở Châu Á Thái Bình Dương.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-vn/benefits/more-nights'>Xem thêm</a>"
+                },
+                {
+                    "hid": "benefit4",
+                    "cid": "benefitc4",
+                    "subtitle": "Gói giá đặc biệt More Escapes",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Lên kế hoạch du lịch với gói giá độc quyền dành riêng cho hội viên. Trọn gói từ việc ăn uống đến thư giãn tại spa, More Escapes mang lại tất cả các yếu tố cần thiết cho một kỳ nghỉ khó quên.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-vn/benefits/more-nights'>Xem thêm</a>"
+                },
+                {
+                    "hid": "benefit5",
+                    "cid": "benefitc5",
+                    "subtitle": "Nhận thông báo sớm về chương trình ưu đãi toàn cầu",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Ngoài ra, thẻ hội viên Accor Plus còn mang đến cho bạn đặc quyền được thông báo sớm về các chương trình ưu đãi toàn cầu của Accor. Không chỉ được thông báo trước 1 ngày trước khi diễn ra Super Sales hoặc Private Sales, hội viên còn được giảm thêm 10% trên giá ưu đãi.",
+                    "learnmore": ""
+                },
+                {
+                    "hid": "benefit6",
+                    "cid": "benefitc6",
+                    "subtitle": "Giảm lên đến 50% hóa đơn ăn ở Châu Á Thái Bình Dương",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Thưởng thức ẩm thực vòng quanh thế giới tại hơn 1400 nhà hàng của khách sạn ở 20 quốc gia. Với thẻ hội viên, bạn sẽ được giảm lên đến 50% hóa đơn ăn và 15% thức uống ở Châu Á.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-vn/benefits/more-flavours'>Xem thêm</a>"
+                },
+                {
+                    "hid": "benefit7",
+                    "cid": "benefitc7",
+                    "subtitle": "Giảm 15% thức uống ở Châu Á",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Giảm ngay 15% hóa đơn thức uống tại các nhà hàng và bar của khách sạn Accor ở Châu Á.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-vn/benefits/more-flavours'>Xem thêm</a>"
+                },
+                {
+                    "hid": "benefit8",
+                    "cid": "benefitc8",
+                    "subtitle": "Các sự kiện và trải nghiệm độc đáo",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Gặp gỡ và giao lưu với thần tượng thể thao hay các diễn viên nổi tiếng, học nấu ăn cùng với các đầu bếp Masterchef. Trải nghiệm những điều mà bạn chưa từng thử trước đây - nhờ có thẻ hội viên Accor Plus. ",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-vn/benefits/inspiration'>Xem thêm</a>"
+                },
+                {
+                    "hid": "benefit9",
+                    "cid": "benefitc9",
+                    "subtitle": "Tự động nâng lên hạng Silver của ALL - Accor Live Limitless",
+                    "traveller": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "explorer": {
+                        "content": true,
+                        "image": "<img src='src/images/open-iconic/png/check-8x.png' width='15' />"
+                    },
+                    "description": "Thẻ hội viên sẽ được tự động nâng lên hạng Silver trong chương trình hội viên thân thiết toàn cầu, ALL - Accor Live Limitless. Dù bạn đi công tác hay đi du lịch, mỗi đêm bạn lưu trú tại các khách sạn Accor, bạn đều nhận được điểm thưởng để sử dụng cho các kỳ nghỉ tiếp theo hoặc tham gia sự kiện đặc biệt.",
+                    "learnmore": "<a target='_blank' href='https://www.accorplus.com/en-vn/benefits/more-rewards'>Xem thêm</a>"
+                },
+                {
+                    "hid": "benefit10",
+                    "cid": "benefitc10",
+                    "subtitle": "PHÍ THẺ HỘI VIÊN THƯỜNG NIÊN",
+                    "traveller": {
+                        "content": "VND 4,500,000",
+                        "image": ""
+                    },
+                    "explorer": {
+                        "content": "VND 6,000,000",
+                        "image": ""
+                    },
+                    "description": "Chọn loại thẻ hội viên mà bạn yêu thích và tham gia Accor Plus ngay hôm nay.",
+                    "learnmore": ""
+                }
+            ]
+        }
+    }
+]
