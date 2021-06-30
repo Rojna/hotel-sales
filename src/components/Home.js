@@ -1,29 +1,65 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import {HOTELSEARCH_CODEURL} from './../constants/index';
 import Header from './Header';
+import Welcome from './Welcome';
 import HotelSearchModal from './HotelSearchModal';
-// import Posts from './Posts';
-// import EmployeeDetail from "./EmployeeDetail";
+import Benefits from './Benefits.js';
 
-import checkbox from "../images/check_box-24px 1.png";
+import { HOTELSEARCH_CODEURL, COUNTRYCODES } from './../constants/index';
+import { getCountry, setBenefits, setLanguage } from './Helper.js';
+
+import auData from '../data/benefits.json';
+import idData from '../data/benefits.json';
+import myData from '../data/benefits.json';
+import thData from '../data/benefits.json';
+import vnData from '../data/benefits.json';
+
+import languages from '../data/language.json';
 import '../css/style.css';
 
 class Home extends Component {
     constructor(props) {
         super(props);
+        const region = this.props.location.pathname.split('/')[1] || 'au';
         this.state = {
             show               : false,
+            showLeaderBoard    : false,
             hotelSearch        : false,
             hotelSearchResults : false,
             countryCode        : '',
             edYpos             : '',
             hotelCode          : '',
             hotelName          : '',
+            region             : region,
+            benefitResults     : {},
+            showError          : false,
+            language           : setLanguage(region, languages)
         };
-        this.showModal       = this.showModal.bind(this);
-        this.hideModal       = this.hideModal.bind(this);
-        this.save = this.save.bind(this);
+        this.showModal         = this.showModal.bind(this);
+        this.hideModal         = this.hideModal.bind(this);
+        this.handleClick       = this.handleClick.bind(this);
+        this.handleNext        = this.handleNext.bind(this);
+        this.handleLeaderBoard = this.handleLeaderBoard.bind(this);
+        this.saveHotelSearch   = this.saveHotelSearch.bind(this);
+
+    }
+        
+    componentDidMount = () => {
+        const {hotelCode , hotelName, benefitResults, language} =this.state;
+        const { history } = this.props;
+        if(localStorage.getItem('hotelData')){
+            const hotelData = JSON.parse(localStorage.getItem('hotelData'));
+            this.setState({
+                hotelSearch        : true,
+                hotelSearchResults : true,
+                hotelCode          : hotelData.HotelCode,
+                hotelName          : hotelData.HotelName,
+                countryCode        : localStorage.getItem('countryCode'),
+                showLeaderBoard    : true
+            },() => {
+                this.handleClick(); 
+            });
+        }
     }
 
     showModal = (e) => {
@@ -31,11 +67,33 @@ class Home extends Component {
         this.setState({ show: true });
       };
     
-      hideModal = () => {
+    hideModal = () => {
         this.setState({ show: false });
-      };
+    };
 
     handleClick = () => {
+        console.log('Handle click');
+        console.log('hotel Code', this.state.hotelCode);
+
+        var benefitsData;
+        switch(this.state.region){
+            case 'id':
+                benefitsData = idData;
+                break;
+            case 'my':
+                benefitsData = myData;
+                break;
+            case 'th':
+                benefitsData = thData;
+                break;   
+            case 'vn':
+                benefitsData = vnData;
+                break;   
+            default:
+                benefitsData = auData;
+                break;
+        } 
+
         axios.get(`${HOTELSEARCH_CODEURL}?HotelCode=${this.state.hotelCode}`)
             .then(response => {
                 console.log(response.data[0].HotelCode);
@@ -47,6 +105,11 @@ class Home extends Component {
                         hotelName          : response.data[0].HotelName
                     });
                     localStorage.setItem('hotelData',JSON.stringify(response.data[0]));
+                    const country = getCountry(response.data[0].CountryCode, COUNTRYCODES);
+                    this.setState({countryCode : country.country_code});
+                    localStorage.setItem('countryCode',this.state.countryCode);
+                    this.setState({benefitResults : setBenefits(response.data[0].CountryCode, benefitsData)});
+                    this.hideModal();
                 } else throw new Error('Oops, something went wrong');
             }).catch(error => {
                 this.setState({
@@ -56,82 +119,83 @@ class Home extends Component {
         });
     };
 
+    handleNext = () => {
+        const {hotelCode , hotelName, benefitResults, language} =this.state;
+        var url;;
+        switch(this.state.region){
+            case 'id':
+                url = "/id";
+                break;
+            case 'my':
+                url = "/my";
+                break;
+            case 'th':
+                url = "/th";
+                break;   
+            case 'vn':
+                url = "/vn";
+                break;   
+            default:
+                url = "";
+                break;
+        } 
+        if(hotelCode && localStorage.getItem('hotelData')){
+            this.props.history.push(url+'/employee-details', { 
+                hotelCode      : hotelCode, 
+                hotelName      : hotelName,
+                benefitResults : benefitResults,
+                language       : language
+            });
+        }else{
+            this.setState({showError: true});
+        }
+    };
+
     handleChange = (e) => {
         this.setState({hotelCode: e.target.value});
     };
 
-    save = (hotelCode) => {
-        this.setState({hotelCode: hotelCode});
+    async saveHotelSearch(code){
+        await this.setState({ hotelCode: code });
         this.handleClick();
     }
 
+    handleLeaderBoard = () => {
+        if(this.state.showLeaderBoard){
+            this.props.history.push('/leaderboard', { 
+                hotelCode      : this.state.hotelCode, 
+                hotelName      : this.state.hotelName
+            });
+        }
+    }
+
     render() {
-        const {hotelSearch, hotelSearchResults, hotelName, hotelCode, show} = this.state;
+        const {hotelSearch, hotelSearchResults, hotelName, hotelCode, show, benefitResults, showError, language, showLeaderBoard} = this.state;
         return (
             <div className="hotelSales-wrapper">
-                <Header />
-                <div className="hotelSales-hotelDetails container">
-                <div className="hotelSales-welcomeMsg mt-5">
-                    <div className="">
-                        <h4>Welcome to Accor Plus' Loyalty Plus hotel sales</h4>
-                        <p>Before we get started, there are 3 short questions to ensure we have all the needed detail to successfully complete the membership enrolment.</p>
-                        <p>To assist the guest with the appropriate product selection, please see below our key Accor Plus membership benefits.</p>
-                    </div>
-                    <div className="">
-                        <h4>Supplied details</h4>
-                        <p>Employee type: Hotel Heartist</p>
-                    </div>
-                </div>
-      
-                <h4>Hotel details <sup>*</sup></h4>
-                <p>Please provide your hotel details for sales tracking</p>
-
-                <div className="hotel-code-container row">
-                    <div className="form-group col-12 col-md-6">
-                        <label className="ridCode">Hotel RID code <sup>*</sup></label>
-                        <input type="text" placeholder="Enter RID Code" className="form-control" required value={hotelCode} onChange={this.handleChange}/>
-                        <div className="error">Enter the RID Code here. <a onClick= {this.showModal} href="#">Click here to perform a search</a>.</div>
-                        <button className="btn btn-secondary mt-4" onClick={this.handleClick}>Check</button>
-                    </div> 
-
-                    {hotelSearch && !hotelSearchResults && (
-                        <div className="hotel-results-container col-12 col-md-6">
-                            <h5>Result</h5>
-                            <div class="mt-3">
-                                No results. <a onClick= {this.showModal} href="#">Click here to search the hotel.</a>
-                            </div>
-                            </div>
-                    )}
-                    
-                    {hotelSearch && hotelSearchResults && hotelName && hotelCode && (
-                        <div className="hotel-results-container col-12 col-md-6">
-                            <h5>Result</h5>
-                            <div class="mt-3">
-                                <img src={checkbox} width="25"/> {hotelName} - {hotelCode}
-                            </div>
-                        </div>
-                    )}
-                </div>
-
-                <div className="mt-2">
-                    <p>Don't know your hotel code? <a onClick= {this.showModal} href="#">Click here to perform a search</a></p>
-                </div>
-
-                <div className="d-flex justify-content-between">
-                <p className="disclaimer">*mandatory question</p>
-                <button id="btnNext" type="button" className="btn btn-primary">Next ></button>
-                </div>
-
-            </div>
-            <HotelSearchModal 
-                show        ={show}  
-                title       = {'Hotel details'} 
-                instruction = {'Please provide your hotel name for a search'} 
-                search      = {'Search'}
-                submit      = {'Save and Apply'} 
-                result      = {'RESULTS'} 
-                handleClose = {this.hideModal} 
-                save        = {this.saveHotelSearch} />
+                <Header 
+                    showLeaderBoard   = {showLeaderBoard}
+                    handleLeaderBoard = {this.handleLeaderBoard}/>
+                <Welcome
+                    language    = {language} 
+                    showError   = {showError}
+                    hotelCode   = {hotelCode}
+                    hotelName   = {hotelName}
+                    hotelSearch = {hotelSearch}
+                    hotelSearchResults = {hotelSearchResults}
+                    handleClose = {this.hideModal} 
+                    save        = {this.saveHotelSearch}
+                    showModal   = {this.showModal}
+                    handleClick = {this.handleClick}
+                    handleChange = {this.handleChange}
+                    handleNext   = {this.handleNext} />
+               
+                <Benefits data = {benefitResults}/>
+                <HotelSearchModal 
+                    show        = {show}  
+                    language    = {language}
+                    handleClose = {this.hideModal} 
+                    save        = {this.saveHotelSearch} />
         </div>
         );
     }

@@ -1,72 +1,134 @@
 import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
-import Footer from "./Footer";
-import '../css/style.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import CheckIcon from '@material-ui/icons/Check';
-import CancelIcon from '@material-ui/icons/Cancel';
+import Header from './Header';
+import Benefits from './Benefits.js';
+
+import { getUrl, getFromSession } from './Helper.js';
+import { PRICELEVEL_DISCOUNT, PRICELEVEL_DISCOUNT_NZ, PRICELEVEL_DISCOUNT_TH } from './../constants/index';
 
 class EmployeeDetail extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            showError : false,
+            staffName : '',
+            staffId   : ''
+        };
+    }
+
+    componentWillMount = () => {
+        if(localStorage.getItem('hotelData') && this.props.history.location.state.language){
+            const hotelData = JSON.parse(localStorage.getItem('hotelData'));
+            this.setState({
+                countryCode        : hotelData.countryCode
+            });
+        }else{
+            window.location.href = "/";
+        }
+    }
+
+    handleNext = () => {
+        const {staffName, staffId, countryCode} =this.state;
+        const { state } = this.props.history.location;
+        const urlRoot = getUrl().urlRoot;
+        var priceLevel;
+        if(!staffName){
+            this.setState({showError: true});
+        }else{
+            if(countryCode == "AU") {
+                priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT;
+            } else if(countryCode == "NZ") {
+                priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_NZ;
+            } else if(countryCode == "TH") {
+                priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_TH;
+            }
+
+            const url =  urlRoot + getFromSession("countryCode") + "/registration?hotelRIDOnlineKiosk="+state.hotelCode+"&apHotelEmployeeName="+staffName+"&hotelEmployee="+staffName + "&apHotelEmployeeId="+ staffId + priceLevel;
+            console.log("URL", url);
+            window.location.href = url;
+        }
+    };
+
+    handleChange = (e) => {
+        console.log(e);
+        const key = e.target.name;
+        const value = e.target.value;
+        this.setState({ [key]: value });
+    };
+
+
     render() {
+        const { state } = this.props.history.location;
+        const { showError, staffName, staffId } = this.state;
         return (
-            <div className='detail-container'>
-                    {this.props.postDetail &&
-                                <Table className='table' aria-label="simple table">
-                                    <TableHead>
-                                        <TableRow>
-                                        </TableRow>
-                                    </TableHead>
-                                    <TableBody>
-                                        <TableRow>
-                                            <TableCell component="th" > Name</TableCell>
-                                            <TableCell>{this.props.postDetail.airportName+' ['+
-                                            this.props.postDetail.airportCode+']'}</TableCell>
-                                        </TableRow>
-                                        <TableRow>
-                                            <TableCell component="th" > Time Zone</TableCell>
-                                            <TableCell>{this.props.postDetail.city.timeZoneName}</TableCell>
-                                        </TableRow>
-                                        <TableRow>
-                                            <TableCell component='th'>International</TableCell>
-                                            <TableCell>{this.props.postDetail.internationalAirport ? <CheckIcon/>:<CancelIcon />}</TableCell>
-                                            </TableRow>
-                                        <TableRow>
-                                            <TableCell component='th'>Domestic</TableCell>
-                                            <TableCell>{this.props.postDetail.domesticAirport ? <CheckIcon />:<CancelIcon />}</TableCell>
-                                            </TableRow>
-                                        <TableRow>
-                                            <TableCell component='th'>Regional</TableCell>
-                                            <TableCell>{this.props.postDetail.regionalAirport ? <CheckIcon />:<CancelIcon />}</TableCell>
-                                            </TableRow>
-                                        <TableRow>
-                                            <TableCell component="th" scope="row"> Location</TableCell>
-                                            <TableCell>
-                                                {this.props.postDetail.city.cityName + ', ' +
-                                                this.props.postDetail.country.countryName + ' [' +
-                                                this.props.postDetail.country.countryCode+'], '+
-                                                this.props.postDetail.region.regionName
-                                                }
-                                            </TableCell>
-                                        </TableRow>
-                                        <TableRow>
-                                            <TableCell component="th"> Latitude / Longitude</TableCell>
-                                            <TableCell>{this.props.postDetail.location.latitude + '° ' +
-                                            (this.props.postDetail.location.latitudeDirection  ? this.props.postDetail.location.latitudeDirection :'') + ' / ' +
-                                            this.props.postDetail.location.longitude+'° '+
-                                            (this.props.postDetail.location.longitudeDirection ? this.props.postDetail.location.longitudeDirection:'' )
-                                            }</TableCell>
-                                        </TableRow>
-                                    </TableBody>
-                                </Table>
-                }
-                <Button className='back-button' onClick={()=>this.props.toggleDisplayStatus(1)} variant="contained" color="primary"> Go Back</Button>
-                <Footer/>
+            <div className="hotelSales-wrapper">
+                <Header />
+                <div className="container mt-5">
+                    <div>
+                        <h4>{state.language.welcome}</h4>
+                        <p>{state.language.beforeWeGetStarted}</p>
+                        <p>{state.language.toAssist}</p>
+                    </div>
+                    <div>
+                        <h4>{state.language.supplliedDetails}</h4>
+                        <p><strong>{state.language.employeeType}: </strong>{state.language.hotelHeartist}</p>
+                        <p><strong>{state.language.hotelDetails}:</strong> {state.hotelName} -RID {state.hotelCode}</p>
+                    </div>
+
+                    <div>
+                        <h4>{state.language.yourDetails} <sup>*</sup></h4>
+                        <p>{state.language.pleaseProvide}</p>
+                    </div>
+
+                    <div className="hotel-code-container row">
+                        <div className="form-group col-12 col-md-6">
+                            <label for="staffName">
+                                {state.language.heartistName}<sup>*</sup>
+                            </label>
+                            <input 
+                                name        = "staffName"
+                                type        = "text" 
+                                placeholder = {state.language.enterStaffName}
+                                className       = {`form-control ${showError ? ' border border-danger' : ''}`} 
+                                value       = {staffName} 
+                                onChange    = {this.handleChange} />
+                            {showError && (
+                                <div className="error">{state.language.missingEmployee}</div>
+                            )}
+                        </div>
+
+                        <div className="form-group col-12 col-md-6">
+                            <label for="staffId">
+                                {state.language.yourstaffID}
+                            </label>
+                            <input 
+                                name        = "staffId" 
+                                type        = "text" 
+                                placeholder = {state.language.enterStaffID} 
+                                className   = "form-control"
+                                value       = {staffId} 
+                                onChange    = {this.handleChange} />
+                        </div>
+                    </div>
+
+                    <div className="mt-2">
+                        <p>{state.language.whyWeNeedThis}</p>
+                    </div>
+
+                    <div className="d-flex justify-content-between">
+                        <p class="disclaimer">*mandatory question{state.language.employeeType}</p>
+                    </div>
+
+                    <div className="d-flex justify-content-between">
+                        <button className="btn btn-primary" onClick={()=> this.props.history.goBack()}><FontAwesomeIcon icon={faChevronLeft} /> {state.language.back}</button>
+                        <button className="btn btn-primary" onClick={this.handleNext}>{state.language.next} <FontAwesomeIcon icon={faChevronRight} /></button>
+                    </div>
+                </div>
+            
+                <Benefits data = {state.benefitResults}/>
             </div>
         );
     }

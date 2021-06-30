@@ -69,19 +69,15 @@ button.btn-secondary {
 /**
 *     START Accordion Styles
 **/
-.benefits-header-container {
-    border-bottom: 1px solid #CCCCCC;
-}
-
-.benefits-header {
-    /*padding: 0;*/
+.benefits-header-container, .benefits-container .card {
+    border-bottom: 1px solid #CCCCCC !important;
 }
 
 .card {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC !important;
     border-radius: 0;
     cursor: pointer;
 }
@@ -121,7 +117,6 @@ button.btn-secondary {
 .error {
     color: #FF0000;
     font-size: 12px;
-    display: none;
 }
 
 .hotelSearchModalResults {
@@ -133,6 +128,7 @@ button.btn-secondary {
 .hotelSearchModalResults .table tr{
     border: none;
 }
+
 .hotelSearchModalResults .table {
     color: inherit;
 }
