@@ -6,7 +6,13 @@ import Header from './Header';
 import Benefits from './Benefits.js';
 
 import { getUrl, getFromSession } from './Helper.js';
-import { PRICELEVEL_DISCOUNT, PRICELEVEL_DISCOUNT_NZ, PRICELEVEL_DISCOUNT_TH } from './../constants/index';
+import { 
+    PRICELEVEL_DISCOUNT, 
+    PRICELEVEL_DISCOUNT_NZ, 
+    PRICELEVEL_DISCOUNT_TH,
+    PRICELEVEL_DISCOUNT_VN,
+    PRICELEVEL_DISCOUNT_MY,
+    PRICELEVEL_DISCOUNT_ID } from './../constants/index';
 
 class EmployeeDetail extends Component {
 
@@ -44,9 +50,15 @@ class EmployeeDetail extends Component {
                 priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_NZ;
             } else if(countryCode == "TH") {
                 priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_TH;
+            } else if(countryCode == "VN") {
+                priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_VN;
+            }  else if(countryCode == "MY") {
+                priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_MY;
+            } else if(countryCode == "ID") {
+                priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_ID;
             }
 
-            const url =  urlRoot + getFromSession("countryCode") + "/registration?hotelRIDOnlineKiosk="+state.hotelCode+"&apHotelEmployeeName="+staffName+"&hotelEmployee="+staffName + "&apHotelEmployeeId="+ staffId + priceLevel;
+            const url =  urlRoot + getFromSession("countryCode").toLowerCase() + "/registration?hotelRIDOnlineKiosk="+state.hotelCode+"&apHotelEmployeeName="+staffName+"&hotelEmployee="+staffName + "&apHotelEmployeeId="+ staffId + priceLevel;
             console.log("URL", url);
             window.location.href = url;
         }

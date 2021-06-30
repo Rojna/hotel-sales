@@ -11,6 +11,9 @@ export const HOTELNAME_SEARCHURL = "/data/hotel-search.json";
 export const PRICELEVEL_DISCOUNT    = "hotelAU";
 export const PRICELEVEL_DISCOUNT_NZ = "hotelNZ";
 export const PRICELEVEL_DISCOUNT_TH = "hotelTH";
+export const PRICELEVEL_DISCOUNT_VN = "hotelVN";
+export const PRICELEVEL_DISCOUNT_MY = "hotelMY";
+export const PRICELEVEL_DISCOUNT_ID = "hotelID";
 
 export const COUNTRYCODES = [
     'en', 
