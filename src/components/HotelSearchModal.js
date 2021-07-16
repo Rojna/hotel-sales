@@ -104,7 +104,7 @@ class HotelSearchModal extends Component {
                     )}
                 </ModalBody>
                 <ModalFooter>
-                    <button onClick={handleClose} className="btn btn-warning">Cancel</button>
+                    <button onClick={handleClose} className="btn btn-secondary">Cancel</button>
                     <button onClick={() => save(this.state.selectedHotelCode)} type="button" id="btnModalSubmit" className="btn btn-primary">{language.saveAndApply}</button>
                 </ModalFooter>
             </Modal>

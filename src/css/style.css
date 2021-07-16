@@ -43,18 +43,35 @@ button.btn {
 }
 
 button.btn-primary{
-    background-color: #050033;
+    background: #ec6527;
+    border: 3px solid #ec6527;
+    border-radius: 3px;
+    color: #fff;
 }
 
-button.btn:hover {
-    background-color: #557b97;
-    border: #557b97;
-    
+button.btn-primary:hover {
+    color: #fff;
+    background: #f5ac8a;
+    border: 3px solid #f5ac8a;
+}
+
+button .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background: #f5ac8a;
+    border: 3px solid #f5ac8a;
 }
 
 button.btn-secondary {
-    background-color: #74758c;
-    border: #74758c;
+    background: #fff;
+    border: 3px solid #ec6527;
+    border-radius: 3px;
+    color: #ec6527;
+}
+
+button.btn-secondary:hover, .btn-secondary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background: #ec6527;
+    border: 3px solid #ec6527;
 }
 
 .banner {
@@ -71,9 +88,10 @@ button.btn-secondary {
 **/
 .benefits-header-container, .benefits-container .card {
     border-bottom: 1px solid #CCCCCC !important;
+    box-shadow: none;
 }
 
-.card {
+.benefits .card {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -82,26 +100,29 @@ button.btn-secondary {
     cursor: pointer;
 }
 
-.card h5 {
+.benefits .card h5 {
     text-align: left;
     padding: 0;
 }
 
-.card h5 button {
+.benefits .card h5 button {
     padding: 0;
     color: #000000;
     text-decoration: none;
     text-align: left;
 }
 
-.card-header {
+.benefits .card-header {
     padding: 10px 0;
     border-bottom: none;
     background-color: transparent;
-    
 }
 
-.card-body {
+.benefits .card-header:hover {
+    cursor: pointer;
+}
+
+.benefits .card-body {
     padding: 10px 15px;
 }
 
@@ -131,4 +152,14 @@ button.btn-secondary {
 
 .hotelSearchModalResults .table {
     color: inherit;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F2f2f2CC;
+    z-index: 2000;
 }

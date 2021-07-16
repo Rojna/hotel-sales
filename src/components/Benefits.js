@@ -7,7 +7,7 @@ class Benefits extends React.Component  {
         var benefits;
         if(data.benefits){
             benefits = data.benefits.map((item, index) =>
-                    <Card key={index}>
+                    <Card key={index} className="benefits">
                         <Accordion.Toggle as={Card.Header} eventKey={index+1}>
                             <div className="d-flex ">
                                 <div className="mb-0 col-11 d-block d-md-none">

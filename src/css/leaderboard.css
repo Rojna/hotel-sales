@@ -1,0 +1,59 @@
+.nav .nav-item {
+    background-color: #050033 !important;
+    color: white !important;
+    
+}
+
+.nav .active, .nav-item:hover{
+    background-color: inherit !important;
+    color: #74758c !important;
+    font-weight: 600;
+    box-shadow: 3px -4px 5px 0px rgb(0 0 0 / 7%), inset 0 0 4px 0px rgb(0 0 0 / 1%);    
+}
+#uncontrolled-tab-example-tab-country{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+#uncontrolled-tab-example-tab-hotel {
+    margin-left: 0.5rem;
+}
+
+.banner h4{
+    padding-top: 15%;
+    color: white;
+}
+
+.table .active { 
+    color: white;
+    background: #6c757d;
+}
+
+.leaderboard h4 {
+   font-size : 1.25rem;
+}
+
+.leaderboard .react-datepicker-wrapper {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    h4 {
+      font-size: 1rem;
+    }
+
+    .leaderboard h4 {
+        font-size : 0.9rem;
+    }
+
+    .leaderboard .info-box-text {
+        white-space: inherit;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+    .table td, .table th {
+        padding: .5rem;
+    }
+}

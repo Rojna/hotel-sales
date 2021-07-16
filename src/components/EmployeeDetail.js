@@ -71,13 +71,25 @@ class EmployeeDetail extends Component {
         this.setState({ [key]: value });
     };
 
+    leaderBoard = () => {
+        const { state } = this.props.history.location;
+        if(state.showLeaderBoard){
+            this.props.history.push('/leaderboard', { 
+                hotelCode      : state.hotelCode, 
+                hotelName      : state.hotelName
+            });
+        }
+    }
+
 
     render() {
         const { state } = this.props.history.location;
         const { showError, staffName, staffId } = this.state;
         return (
             <div className="hotelSales-wrapper">
-                <Header />
+                <Header 
+                    showLeaderBoard   = {state.showLeaderBoard}
+                    handleLeaderBoard = {this.leaderBoard}/>
                 <div className="container mt-5">
                     <div>
                         <h4>{state.language.welcome}</h4>

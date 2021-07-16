@@ -10,7 +10,7 @@ class Header extends React.Component  {
 
 
     render() {
-        const {hasGlobalMessage, showLeaderBoard, handleLeaderBoard} = this.props;
+        const {hasGlobalMessage, showLeaderBoard, handleLeaderBoard, showBackButton} = this.props;
         return (
             <div>
                 <div className="d-flex justify-content-between container my-3">
@@ -21,9 +21,9 @@ class Header extends React.Component  {
                         </button>
                     )}
                 </div>
-                <div className="d-flex justify-content-center align-items-center banner">
+                <div className={showBackButton ? 'd-none' : 'd-flex justify-content-center align-items-center banner'}>
                     {hasGlobalMessage && 
-                        <h1>{GLOBALHEADER_MESSAGE}</h1>
+                        <h4>{GLOBALHEADER_MESSAGE}</h4>
                      }
                 </div>
             </div>

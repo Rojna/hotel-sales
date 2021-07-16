@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from './Header';
 import Welcome from './Welcome';
 import HotelSearchModal from './HotelSearchModal';
+import LoadingScreen from './common/loading-screen';
 import Benefits from './Benefits.js';
 
 import { HOTELSEARCH_CODEURL, COUNTRYCODES } from './../constants/index';
@@ -14,13 +15,20 @@ import myData from '../data/benefits.json';
 import thData from '../data/benefits.json';
 import vnData from '../data/benefits.json';
 
-import languages from '../data/language.json';
+import languages from '../data/language-test.json';
 import '../css/style.css';
 
 class Home extends Component {
     constructor(props) {
         super(props);
         const region = this.props.location.pathname.split('/')[1] || 'au';
+        var getLanguage='';
+        if(localStorage.getItem('hotelData')){
+            getLanguage = setLanguage(region, JSON.parse(localStorage.getItem('languages')));
+        }else{
+            getLanguage = setLanguage(region, languages);
+        }
+        
         this.state = {
             show               : false,
             showLeaderBoard    : false,
@@ -33,8 +41,9 @@ class Home extends Component {
             region             : region,
             benefitResults     : {},
             showError          : false,
-            language           : setLanguage(region, languages)
+            language           : getLanguage
         };
+        
         this.showModal         = this.showModal.bind(this);
         this.hideModal         = this.hideModal.bind(this);
         this.handleClick       = this.handleClick.bind(this);
@@ -108,7 +117,10 @@ class Home extends Component {
                     const country = getCountry(response.data[0].CountryCode, COUNTRYCODES);
                     this.setState({countryCode : country.country_code});
                     localStorage.setItem('countryCode',this.state.countryCode);
-                    this.setState({benefitResults : setBenefits(response.data[0].CountryCode, benefitsData)});
+                    this.setState({
+                        benefitResults : setBenefits(response.data[0].CountryCode, benefitsData,),
+                        showLeaderBoard : true
+                    });
                     this.hideModal();
                 } else throw new Error('Oops, something went wrong');
             }).catch(error => {
@@ -120,31 +132,15 @@ class Home extends Component {
     };
 
     handleNext = () => {
-        const {hotelCode , hotelName, benefitResults, language} =this.state;
-        var url;;
-        switch(this.state.region){
-            case 'id':
-                url = "/id";
-                break;
-            case 'my':
-                url = "/my";
-                break;
-            case 'th':
-                url = "/th";
-                break;   
-            case 'vn':
-                url = "/vn";
-                break;   
-            default:
-                url = "";
-                break;
-        } 
+        const {hotelCode , hotelName, benefitResults, language, showLeaderBoard} =this.state;
+        const url = (this.state.region == 'au' ? '': '/'+this.state.region);
         if(hotelCode && localStorage.getItem('hotelData')){
             this.props.history.push(url+'/employee-details', { 
-                hotelCode      : hotelCode, 
-                hotelName      : hotelName,
-                benefitResults : benefitResults,
-                language       : language
+                hotelCode         : hotelCode, 
+                hotelName         : hotelName,
+                benefitResults    : benefitResults,
+                language          : language,
+                showLeaderBoard   : showLeaderBoard
             });
         }else{
             this.setState({showError: true});

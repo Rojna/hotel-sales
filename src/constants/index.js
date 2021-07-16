@@ -5,6 +5,14 @@ export const GLOBALHEADER_MESSAGE = "GLobal Header Message";
 export const HOTELSEARCH_CODEURL = 'https://api.accorplus.com/v1/hotel/code/';
 export const HOTELNAME_SEARCHURL = "/data/hotel-search.json";
 
+export const VENDORAPI = "https://api-uat.accorplus.com/v1/vendor/";
+
+export const HEADERAPIVALUE = "hTrmOb88z68c4LOF5huSk698AdlV9mqK4asLDY6o";
+export const GLOBALAPIHEADER = {
+    headers: {
+        'x-api-key': 'hTrmOb88z68c4LOF5huSk698AdlV9mqK4asLDY6o'
+      }
+};
 
 //PriceLevel for Registration
 
@@ -31,4 +39,23 @@ export const COUNTRYCODES = [
     'en-TH', 
     'en-VN'
 ];
+
+export const MAP_COUNTRYCODES = {
+    'AU' : 'Australia', 
+    'CN' : 'China', 
+    'FJ' : 'Fiji', 
+    'IN' : 'India', 
+    'ID' : 'Indonesia', 
+    'MO' : 'Macau', 
+    'MY' : 'Malaysia', 
+    'NZ' : 'New Zealand', 
+    'PH' : 'Philippines', 
+    'SG' : 'Singapore', 
+    'TW' : 'Taiwan', 
+    'TH' : 'Thailand', 
+    'VN' : 'Vietnam',
+    'KR' : 'South Korea',
+    'LA' : 'Lao',
+    ''   : 'N/A'
+};
 

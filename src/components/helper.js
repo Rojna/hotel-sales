@@ -30,25 +30,21 @@ export const getCountry = (countryCode, countryArray) => {
 
 export const setLanguage = (region, benefitsData) => {
     console.log("setBenefits() :: region", region);
+    console.log("setBenefits() :: region", benefitsData); 
     //manipulate region to fit JSON feed
    if( benefitsData ) {
         var found = false;
-        for(var i = 0; i < benefitsData.length; i++) {
-            console.log("data", benefitsData[i]);
-            for(var key in benefitsData[i]) {
-                console.log("key", key);
+        for (const [key, value] of Object.entries(benefitsData)) {
                 if(key.indexOf(region) > -1) {
                     found = true;
                     console.log("country found 1 :: key", key);
-                    console.log("country found 1", benefitsData[i][key]);
-                    return(benefitsData[i][key]);
+                    console.log("country found 1", benefitsData[key]);
+                    return(value);
                 }
-            }
         }
-
         if(!found) {
             console.log("country not found");
-            return(benefitsData[0]['au']);
+            return(benefitsData['au']);
         }
     }
 }
