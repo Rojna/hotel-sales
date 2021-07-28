@@ -72,6 +72,13 @@
     padding: 10px 0;
 }
 
+.leaderboard .info-box-icon {
+    background-color: #A51E19;
+}
+
+.leaderboard .icon {
+    fill : #fff
+}
 
 @media (max-width: 768px) {
     h4 {
