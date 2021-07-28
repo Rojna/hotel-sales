@@ -3,17 +3,20 @@ export const getUrl=()=>{
     if(urlPath.indexOf("localhost") != -1) {
         return {
             baseUrl : "",
-            urlRoot : "https://alb.nuat.accorplus.com/"
+            urlRoot : "https://alb.nuat.accorplus.com/",
+            googleApiUrl: "https://script.google.com/macros/s/AKfycbxKQYwf3YcGvBwxeV4RTnlFN4j-Fjt37ngupqITDjjuu58wwBBd038719XOGjwHWueRVg/exec"
         };
     } else if(window.location.host.indexOf("dev-hotelsales") != -1) {
         return {
             baseUrl : "https://dev-hotelsales.accorplus.com",
-            urlRoot : "https://alb.nuat.accorplus.com/"
+            urlRoot : "https://alb.nuat.accorplus.com/",
+            googleApiUrl: "https://script.google.com/macros/s/AKfycbxKQYwf3YcGvBwxeV4RTnlFN4j-Fjt37ngupqITDjjuu58wwBBd038719XOGjwHWueRVg/exec"
         };
     } else {
         return {
             baseUrl : "https://hotelsales.accorplus.com",
-            urlRoot : "https://www.accorplus.com/"
+            urlRoot : "https://www.accorplus.com/",
+            googleApiUrl: "https://script.google.com/macros/s/AKfycbwGi74McDnkf5UtNYZiD8VXqDvCmwPe-gOXno7sQNY9ohdBOy7ViwjxH_jv_ym2-nS8/exec"
         };
     }
 }
