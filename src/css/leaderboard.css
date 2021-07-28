@@ -37,6 +37,42 @@
     display: block;
 }
 
+.leaderboardTable th, .leaderboardTable td {
+    text-align: center;
+}
+
+.leaderboardTable-head {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
+    font-size: 1.75rem;
+    font-weight: bolder;
+    padding: 0.75rem;
+}
+
+.leaderboardTable-body {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #CCCCCC !important;
+    border-radius: 0;
+    cursor: pointer;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.leaderboardTable-head div {
+    word-break: break-word;
+}
+
+.leaderboardTable-body .card-header {
+    border-bottom: none !important;
+}
+
+.leaderboardTable-body .card-header, .leaderboardTable-body .card-body {
+    padding: 10px 0;
+}
+
+
 @media (max-width: 768px) {
     h4 {
       font-size: 1rem;

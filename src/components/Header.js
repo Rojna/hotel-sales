@@ -1,16 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faListUl } from '@fortawesome/free-solid-svg-icons'
+import { faListUl, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 import {GLOBALHEADER_MESSAGE} from "../constants/index";
 import logo from "../images/Accor-Plus-logo_2019.png";
 
-
 class Header extends React.Component  {
 
-
     render() {
-        const {hasGlobalMessage, showLeaderBoard, handleLeaderBoard, showBackButton} = this.props;
+        const {hasGlobalMessage, showLeaderBoard, handleLeaderBoard, hideBanner, goBack} = this.props;
         return (
             <div>
                 <div className="d-flex justify-content-between container my-3">
@@ -20,12 +18,19 @@ class Header extends React.Component  {
                             <FontAwesomeIcon icon={faListUl}/> Leader Board
                         </button>
                     )}
+                    {hideBanner &&(
+                        <button className="btn btn-secondary" onClick={goBack}>
+                            <FontAwesomeIcon icon={faChevronLeft} /> Back
+                        </button>
+                    )}
                 </div>
-                <div className={showBackButton ? 'd-none' : 'd-flex justify-content-center align-items-center banner'}>
-                    {hasGlobalMessage && 
-                        <h4>{GLOBALHEADER_MESSAGE}</h4>
-                     }
-                </div>
+                {!hideBanner && (
+                    <div className="d-flex justify-content-center align-items-center banner">
+                        {hasGlobalMessage && 
+                            <h4>{GLOBALHEADER_MESSAGE}</h4>
+                        }
+                    </div>
+                )}
             </div>
         );
     }

@@ -61,6 +61,17 @@ button .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disa
     border: 3px solid #f5ac8a;
 }
 
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0 #fd7e1494;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #f5ac8a;
+    border-color: #f5ac8a;
+    box-shadow: 0 0 0 0 #fd7e1494;
+}
+
 button.btn-secondary {
     background: #fff;
     border: 3px solid #ec6527;
