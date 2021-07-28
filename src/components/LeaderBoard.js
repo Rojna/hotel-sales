@@ -473,9 +473,9 @@ class LeaderBoard extends Component {
 
     getMembershipBreakdown = (data) =>{
         let unique = [];
-        data.forEach(element =>{
-            unique = Object.keys(element.membershipBreakdown)
-        });
+        {data.membershipBreakdown && Object.entries(data.membershipBreakdown).forEach(([key, value]) => {
+           unique.push(key);
+        })}
         return unique;
     }
     
@@ -671,7 +671,7 @@ class LeaderBoard extends Component {
                                                                             <div className="row">
                                                                                 <div className="col-2"></div>
                                                                                 <div className="col-10">
-                                                                                {this.getMembershipBreakdown(dashboardData.topHotels).map((element) => 
+                                                                                {this.getMembershipBreakdown(item).map((element) => 
                                                                                     <p>{element} : {item.membershipBreakdown[element]}</p>
                                                                                 )}
                                                                                 </div>
@@ -751,7 +751,7 @@ class LeaderBoard extends Component {
                                                             <div className="row">
                                                                 <div className="col-2"></div>
                                                                 <div className="col-10">
-                                                                {this.getMembershipBreakdown(employeeDataMap).map((element) => 
+                                                                {this.getMembershipBreakdown(item).map((element) => 
                                                                     <p className="mb-0">{element} : {item.membershipBreakdown[element]}</p>
                                                                 )}
                                                                 </div>
@@ -829,7 +829,7 @@ class LeaderBoard extends Component {
                                                             <div className="row">
                                                                 <div className="col-1"></div>
                                                                 <div className="col-11">
-                                                                    {this.getMembershipBreakdown(countryDataMap).map((element) => 
+                                                                    {this.getMembershipBreakdown(item).map((element) => 
                                                                         <p className="mb-0">{element} : {item.membershipBreakdown[element]}</p>
                                                                     )}
                                                                 </div>
@@ -919,9 +919,12 @@ class LeaderBoard extends Component {
                                                             <div className="row">
                                                                 <div className="col-1"></div>
                                                                 <div className="col-11">
-                                                                    {this.getMembershipBreakdown(globalDataMap).map((element) => 
+                                                                    {this.getMembershipBreakdown(item).map((element) => 
                                                                         <p>{element} : {item.membershipBreakdown[element]}</p>
                                                                     )}
+                                                                    {/* {item.membershipBreakdown && Object.entries(item.membershipBreakdown).forEach(([key, value]) => {
+                                                                        <p>{key} : {value}</p>
+                                                                    })} */}
                                                                 </div>
                                                             </div>
                                                         </Card.Body>
