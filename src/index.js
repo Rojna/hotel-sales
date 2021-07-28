@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
 import Home from './components/Home';
+import Default from './components/Default';
 import EmployeeDetail from './components/EmployeeDetail';
 import LeaderBoard from './components/LeaderBoard';
 import LoadingScreen from './components/common/loading-screen'
@@ -96,7 +97,7 @@ class App extends React.Component {
                 {routes}
                 {routeEmployeeDetails}
                 <Route path="/leaderboard" exact component={LeaderBoard}/>
-                <Route component={Home} />
+                <Route component={Default} />
             </Switch>
         </Router>
         );
