@@ -8,10 +8,6 @@ phases:
     # Install dependencies  
       - echo Installing dependencies...
       - npm install
-       # install angular cli
-      - npm install -g @angular/cli
-      # Upgrade AWS CLI to the latest version
-      - pip install --upgrade awscli
   build:
     commands:
       - echo Building...
