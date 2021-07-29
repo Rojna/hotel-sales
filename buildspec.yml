@@ -12,22 +12,8 @@ phases:
     commands:
       - echo Building Hotel Sales ...
       - npm run build
-  artifacts:
-    files:
-      - '**/*'
-    discard-paths: no
-    base-directory: build
   
-  # post_build:
-  #   commands:
-  #     # copy the contents of /build to S3
-  #     - echo building files in s3 bucket..
-  #     - aws s3 cp --recursive ./build s3://$WEBSITE_S3_BUCKET/ 
-  #     # invalidate the CloudFront cache 
-  #     # to force CloudFront to update its edge locations with the new versions
-  #     - echo invalidating... 
-  #     - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID 
-  #       --paths /
-
+  
+ 
 
   
