@@ -137,9 +137,7 @@ class LeaderBoard extends Component {
                 .then(response => {
                     if (response.status === 200) {
                         if(response.data){
-                            let result = response.data; 
-                            result.membershipBreakdown['Accor Plus Traveller Membership'] = 2;
-                            result.membershipBreakdown['Accor Plus Explorer Membership'] = 4;
+                            let result = response.data;
                             this.setState({ 
                                 dashboardData : result});
                             localStorage.setItem('dashboardData',JSON.stringify(result));
@@ -446,12 +444,15 @@ class LeaderBoard extends Component {
         console.log("Clicked Search");
         const {startDate, endDate, activeTab} = this.state;
         const {hotelCode} = this.props.location.state;
-        let start = moment(startDate).format("DD/MM/YYYY");
-        const end = moment(endDate).format("DD/MM/YYYY");
-        this.setState({fetchingData : true});
-        const fetchEmployee = this.getEmployeeData(start, end, hotelCode, 1);
-        const fetchCountry = this.getCountryData(start, end, 1);
-        const fetchGlobal = this.getGlobalData(start, end, 1);
+        this.setState({
+            fetchingData : true,
+            employeePage : 1,
+            countryPage  : 1,
+            globalPage   : 1
+        });
+        const fetchEmployee = this.getEmployeeData(startDate, endDate, hotelCode);
+        const fetchCountry = this.getCountryData(startDate, endDate);
+        const fetchGlobal = this.getGlobalData(startDate, endDate);
         Promise.all([ fetchEmployee, fetchCountry, fetchGlobal ]).then(() => {
             this.setState({fetchingData : false});
             this.filterCountries(this.state.globalData);
@@ -494,9 +495,12 @@ class LeaderBoard extends Component {
         );
         const colors = ['#E38627', '#C13C37', '#6A2135'];
 
-        const pieChartData = [];
+        let pieChartData = [{title: 'No Data', value: 0, color: colors[1] }];
+        let pieChart = false;
         let pieChartDataSum = 0;
         if(dashboardData.membershipBreakdown && Object.keys(dashboardData.membershipBreakdown).length > 0){
+            pieChartData = [];
+            pieChart = true;
             Object.keys(dashboardData.membershipBreakdown).map(function(key, index) {
                 const value = parseInt(dashboardData.membershipBreakdown[key], 10);
                 pieChartDataSum = pieChartDataSum + value;
@@ -594,31 +598,33 @@ class LeaderBoard extends Component {
                                                         <h3 class="card-title font-weight-bold">Membership Breakdown</h3>
                                                     </div>
                                                     <div class="card-body">
-                                                        <PieChart
-                                                            animation
-                                                            animationDuration={500}
-                                                            animationEasing="ease-out"
-                                                            center={[50, 50]}
-                                                            data={pieChartData}
-                                                            radius={PieChart.defaultProps.radius - 6}
-                                                            lineWidth={60}
-                                                            viewBoxSize={[100, 100]}
-                                                            segmentsStyle={{ transition: 'stroke .3s', cursor: 'pointer' }}
-                                                            segmentsShift={(index) => (index === selected ? 6 : 1)}
-                                                            animate
-                                                            label={({ dataEntry }) => dataEntry.value}
-                                                            labelPosition={100 - 60 / 2}
-                                                            labelStyle={{
-                                                                fill: '#fff',
-                                                                opacity: 0.75,
-                                                                pointerEvents: 'none',
-                                                                fontSize:'0.75rem',
-                                                                fontWeight:'700'
-                                                            }}
-                                                            totalValue={pieChartDataSum}
-                                                            onClick={(_, index) => {
-                                                                this.setState({selected : index === selected ? undefined : index});
-                                                            }}/>
+                                                        {pieChart && (
+                                                            <PieChart
+                                                                animation
+                                                                animationDuration={500}
+                                                                animationEasing="ease-out"
+                                                                center={[50, 50]}
+                                                                data={pieChartData}
+                                                                radius={PieChart.defaultProps.radius - 6}
+                                                                lineWidth={60}
+                                                                viewBoxSize={[100, 100]}
+                                                                segmentsStyle={{ transition: 'stroke .3s', cursor: 'pointer' }}
+                                                                segmentsShift={(index) => (index === selected ? 6 : 1)}
+                                                                animate
+                                                                label={({ dataEntry }) => dataEntry.value}
+                                                                labelPosition={100 - 60 / 2}
+                                                                labelStyle={{
+                                                                    fill: '#fff',
+                                                                    opacity: 0.75,
+                                                                    pointerEvents: 'none',
+                                                                    fontSize:'0.75rem',
+                                                                    fontWeight:'700'
+                                                                }}
+                                                                totalValue={pieChartDataSum}
+                                                                onClick={(_, index) => {
+                                                                    this.setState({selected : index === selected ? undefined : index});
+                                                                }}/>
+                                                        )}
                                                     </div>
                                                     <div className="card-footer">
                                                         <ul class="chart-legend clearfix">
