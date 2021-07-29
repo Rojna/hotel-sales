@@ -9,7 +9,7 @@ import LeaderBoard from './components/LeaderBoard';
 import LoadingScreen from './components/common/loading-screen'
 
 import languages from './data/language-test.json';
-import { getUrl } from './components/Helper.js';
+import { getUrl } from '../src/components/Helper';
 
 class App extends React.Component {
     constructor(props) {
