@@ -9,7 +9,6 @@ import LeaderBoard from './components/LeaderBoard';
 import LoadingScreen from './components/common/loading-screen'
 
 import languages from './data/language-test.json';
-import { getUrl } from './components/Helper.js';
 
 class App extends React.Component {
     constructor(props) {
@@ -26,9 +25,26 @@ class App extends React.Component {
       this.createRouteEmployeeDetails = this.createRouteEmployeeDetails.bind(this);
     }
 
+    getUrl(){ 
+      var urlPath = window.location.href;
+      if(urlPath.indexOf("localhost") != -1) {
+          return {
+              googleApiUrl: "https://script.google.com/macros/s/AKfycbxKQYwf3YcGvBwxeV4RTnlFN4j-Fjt37ngupqITDjjuu58wwBBd038719XOGjwHWueRVg/exec"
+          };
+      } else if(window.location.host.indexOf("dev-hotelsales") != -1) {
+          return {
+              googleApiUrl: "https://script.google.com/macros/s/AKfycbxKQYwf3YcGvBwxeV4RTnlFN4j-Fjt37ngupqITDjjuu58wwBBd038719XOGjwHWueRVg/exec"
+          };
+      } else {
+          return {
+              googleApiUrl: "https://script.google.com/macros/s/AKfycbwGi74McDnkf5UtNYZiD8VXqDvCmwPe-gOXno7sQNY9ohdBOy7ViwjxH_jv_ym2-nS8/exec"
+          };
+      }
+  }
+
     async getLanguages() {
 
-      const googleApiURL = getUrl().googleApiUrl;
+      const googleApiURL = this.getUrl().googleApiUrl;
       await fetch(googleApiURL,
         {
           method: "get",
