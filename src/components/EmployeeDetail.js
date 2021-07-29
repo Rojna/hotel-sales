@@ -5,7 +5,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import Header from './Header';
 import Benefits from './Benefits.js';
 
-import { getUrl, getFromSession } from './Helper.js';
+import { getUrl, getFromSession } from './Helper';
 import { 
     PRICELEVEL_DISCOUNT, 
     PRICELEVEL_DISCOUNT_NZ, 

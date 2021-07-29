@@ -7,7 +7,7 @@ import LoadingScreen from './common/loading-screen';
 import Benefits from './Benefits.js';
 
 import { HOTELSEARCH_CODEURL, COUNTRYCODES } from './../constants/index';
-import { getCountry, setBenefits, setLanguage } from './Helper.js';
+import { getCountry, setBenefits, setLanguage } from './Helper';
 
 import auData from '../data/benefits.json';
 import idData from '../data/benefits.json';
