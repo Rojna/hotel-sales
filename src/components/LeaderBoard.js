@@ -680,7 +680,7 @@ class LeaderBoard extends Component {
                                                                                 {this.getRanking(index+1)}
                                                                             </div>
                                                                             <div className="mb-0 col-6">
-                                                                                <p className="mb-1 font-weight-bold">{item.vendorName}</p> 
+                                                                                    <p className="mb-1 font-weight-bold">{item.vendorName}</p> 
                                                                                 <p className="mb-0">RID {item.rid_code}</p>
                                                                             </div>
                                                                             <div className="mb-0 col-3 text-center">
@@ -762,6 +762,7 @@ class LeaderBoard extends Component {
                                                             </div>
                                                             <div className="mb-0 col-6">
                                                                 {item.salesRepId}
+                                                                {!item.salesRepId && <span className="font-weight-normal">Unknown Sales Rep</span>}
                                                             </div>
                                                             <div className="mb-0 col-3 text-center">
                                                                 {item.unitsSold}
