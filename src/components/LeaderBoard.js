@@ -121,6 +121,25 @@ class LeaderBoard extends Component {
         });
     }
 
+    getUrl=()=>{ 
+        var urlPath = window.location.href;
+        if(urlPath.indexOf("localhost") != -1) {
+            return {
+                // apiURL : "https://api-uat.accorplus.com/v1/"
+                apiURL : "https://int-api.accorplus.com/v1/"
+            };
+        } else if(window.location.host.indexOf("dev-hotelsales") != -1) {
+            return {
+                // apiURL : "https://api-uat.accorplus.com/v1/"
+                apiURL : "https://int-api.accorplus.com/v1/"
+            };
+        } else {
+            return {
+                apiURL : "https://int-api.accorplus.com/v1/"
+            };
+        }
+    }
+
     handleTypeChange = (event) =>{ 
         const type =  event.target.value ?? 'monthly';
         this.getDashboardData(type);
@@ -133,7 +152,7 @@ class LeaderBoard extends Component {
         await this.getHotelDetails(startDate, endDate, hotelCode);
         const subsidiary =  this.state.hotelDetails ?  this.state.hotelDetails.subsidiary : "";
         if(subsidiary){
-            await axios.get(`${'https://api-uat.accorplus.com/v1/leaderboarddashboard?type='+type+'&subsidiary='+subsidiary+'&ridCode='+hotelCode}`, GLOBALAPIHEADER)
+            await axios.get(`${this.getUrl().apiURL+'leaderboarddashboard?type='+type+'&subsidiary='+subsidiary+'&ridCode='+hotelCode}`, GLOBALAPIHEADER)
                 .then(response => {
                     if (response.status === 200) {
                         if(response.data){
@@ -154,8 +173,8 @@ class LeaderBoard extends Component {
     getHotelDetails = async (startDate, endDate, ridCode) => {
         let start = moment(startDate).format("DD/MM/YYYY");
         const end = moment(endDate).format("DD/MM/YYYY");
-        start = "01/03/2020";
-        await axios.get(`${VENDORAPI+'?start_date'+start+'&end_date='+end+'&page=1&ridCode='+ridCode}`, GLOBALAPIHEADER)
+        
+        await axios.get(`${this.getUrl().apiURL+'vendor?start_date='+start+'&end_date='+end+'&page=1&ridCode='+ridCode}`, GLOBALAPIHEADER)
             .then(response => {
                 if (response.status === 200) {
                     if(response.data && response.data.length > 0){
@@ -181,14 +200,14 @@ class LeaderBoard extends Component {
             page = this.state.employeePage + 1;
             this.setState({employeePage : page});
         }
-        start = "01/03/2020";
+        
         let index = 1;
         if(page != "1"){
             index = ((page - 1) * 10) + 1;
             this.setState({fetchingEmployeeData : true});
         }
 
-        await axios.get(`${'https://api-uat.accorplus.com/v1/employee?start_date='+start+'&end_date='+end+'&page='+page+'&ridCode='+ridCode}`, GLOBALAPIHEADER)
+        await axios.get(`${this.getUrl().apiURL+'employee?start_date='+start+'&end_date='+end+'&page='+page+'&ridCode='+ridCode}`, GLOBALAPIHEADER)
             .then(response => {
                 if (response.status === 200) {
                     if(response.data && Object.keys(response.data).length > 0){
@@ -232,7 +251,7 @@ class LeaderBoard extends Component {
             page = this.state.countryPage + 1;
             this.setState({countryPage : page});
         }
-        start = "01/03/2020";
+        
         let index = 1;
         if(page != "1"){
             index = ((page - 1) * 10) + 1;
@@ -240,7 +259,7 @@ class LeaderBoard extends Component {
         }
         const subsidiary =  this.state.hotelDetails ?  this.state.hotelDetails.subsidiary : "";
         if(subsidiary){
-            await axios.get(`${VENDORAPI+'?start_date='+start+'&end_date='+end+'&page='+page+'&subsidiary='+subsidiary}`, GLOBALAPIHEADER)
+            await axios.get(`${this.getUrl().apiURL+'vendor?start_date='+start+'&end_date='+end+'&page='+page+'&subsidiary='+subsidiary}`, GLOBALAPIHEADER)
             .then(response => {
                 if (response.status === 200) {
                     if(page !== 1 && response.data.length === 0){
@@ -296,13 +315,13 @@ class LeaderBoard extends Component {
             page = this.state.globalPage + 1;
             this.setState({globalPage : page});
         }
-        start = "01/03/2020";
+        
         let index = 1;
         if(page != "1"){
             index = ((page - 1) * 10) + 1;
             this.setState({fetchingGlobalData : true});
         }
-        await axios.get(`${VENDORAPI + '?start_date='+start+'&end_date='+end+'&page='+page}`, GLOBALAPIHEADER)
+        await axios.get(`${this.getUrl().apiURL + 'vendor?start_date='+start+'&end_date='+end+'&page='+page}`, GLOBALAPIHEADER)
             .then(response => {
                 if (response.status === 200 ) {
                     if(page !== 1 && response.data.length === 0){
@@ -595,7 +614,7 @@ class LeaderBoard extends Component {
                                             <div className="col-12 col-md-4">
                                                 <div class="card">
                                                     <div class="card-header">
-                                                        <h3 class="card-title font-weight-bold">Membership Breakdown</h3>
+                                                        <h3 class="card-title font-weight-bold d-block">{hotelCode} - Membership Breakdown</h3>
                                                     </div>
                                                     <div class="card-body">
                                                         {pieChart && (
