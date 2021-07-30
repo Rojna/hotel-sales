@@ -159,9 +159,7 @@ class LeaderBoard extends Component {
         let start = moment(startDate).format("DD/MM/YYYY");
         const end = moment(endDate).format("DD/MM/YYYY");
 
-        if(!this.state.hotelDetails.subsidiary){
-            await this.getHotelDetails(startDate, endDate, hotelCode);
-        }
+        await this.getHotelDetails(startDate, endDate, hotelCode);
         const subsidiary =  this.state.hotelDetails ?  this.state.hotelDetails.subsidiary : "";
         let url = `${this.getUrl().apiURL+'leaderboarddashboard?ridCode='+hotelCode}`;
         if(subsidiary){
@@ -264,6 +262,7 @@ class LeaderBoard extends Component {
     getCountryData = async (startDate, endDate, updatePage=false) => {
         let start = moment(startDate).format("DD/MM/YYYY");
         const end = moment(endDate).format("DD/MM/YYYY");
+        const {hotelCode} = this.props.location.state;
         let page =  1;
         if(updatePage){
             page = this.state.countryPage + 1;
@@ -275,6 +274,7 @@ class LeaderBoard extends Component {
             index = ((page - 1) * 10) + 1;
             this.setState({fetchingCountryData : true});
         }
+        await this.getHotelDetails(startDate, endDate, hotelCode);
         const subsidiary =  this.state.hotelDetails ?  this.state.hotelDetails.subsidiary : "";
         if(subsidiary){
             await axios.get(`${this.getUrl().apiURL+'vendor?start_date='+start+'&end_date='+end+'&page='+page+'&subsidiary='+subsidiary}`, GLOBALAPIHEADER)
@@ -692,7 +692,7 @@ class LeaderBoard extends Component {
                                                                 </div>  
                                                             </div>
                                                             {dashboardData.topHotels && dashboardData.topHotels.map((item, index) =>
-                                                                <Card key={index} className="leaderboardTable-body">
+                                                                <Card key={index} className={hotelCode === item.rid_code ? 'leaderboardTable-body active' : 'leaderboardTable-body'}>
                                                                     <Accordion.Toggle as={Card.Header} eventKey={index+1}>
                                                                         <div className="d-flex font-weight-bold">
                                                                             <div className="mb-0 col-2 text-center">
