@@ -68,58 +68,58 @@ class LeaderBoard extends Component {
         const {hotelCode} = this.props.location.state;
         let fetchEmployee, fetchGlobal, fetchDashboard;
 
-        if(localStorage.getItem('hotelDetails')){
-            const rid_code = JSON.parse(localStorage.getItem('hotelDetails')).rid_code;
+        if(sessionStorage.getItem('hotelDetails')){
+            const rid_code = JSON.parse(sessionStorage.getItem('hotelDetails')).rid_code;
             const hotelCode = JSON.parse(localStorage.getItem('hotelData')).HotelCode;
             if( rid_code != hotelCode){
-                localStorage.removeItem('hotelDetails');
-                localStorage.removeItem('dashboardData');
-                localStorage.removeItem('employeeData');
-                localStorage.removeItem('data');
-                localStorage.removeItem('globalData');
-                localStorage.removeItem('global');
-                localStorage.removeItem('countryData');
-                localStorage.removeItem('country');
+                sessionStorage.removeItem('hotelDetails');
+                sessionStorage.removeItem('dashboardData');
+                sessionStorage.removeItem('employeeData');
+                sessionStorage.removeItem('data');
+                sessionStorage.removeItem('globalData');
+                sessionStorage.removeItem('global');
+                sessionStorage.removeItem('countryData');
+                sessionStorage.removeItem('country');
                 fetchDashboard = this.getDashboardData('monthly');
             } else{
                 this.setState({
-                    hotelDetails  : JSON.parse(localStorage.getItem('hotelDetails')),
+                    hotelDetails  : JSON.parse(sessionStorage.getItem('hotelDetails')),
             });
             }
         }else{
             fetchDashboard = this.getDashboardData('monthly');
         }
 
-        if(localStorage.getItem('dashboardData')){
+        if(sessionStorage.getItem('dashboardData')){
             this.setState({
-                dashboardData : JSON.parse(localStorage.getItem('dashboardData'))
+                dashboardData : JSON.parse(sessionStorage.getItem('dashboardData'))
             });
         }else{
             fetchDashboard = this.getDashboardData('monthly');
         }
 
-        if(localStorage.getItem('employeeData')){
+        if(sessionStorage.getItem('employeeData')){
             this.setState({
-                employeeData : JSON.parse(localStorage.getItem('employeeData')), 
-                data: JSON.parse(localStorage.getItem('data'))});
+                employeeData : JSON.parse(sessionStorage.getItem('employeeData')), 
+                data: JSON.parse(sessionStorage.getItem('data'))});
         }else{
             fetchEmployee = this.getEmployeeData(startDate, endDate, hotelCode);
         }
 
-        if(localStorage.getItem('globalData')){
+        if(sessionStorage.getItem('globalData')){
             this.setState({
-                globalData : JSON.parse(localStorage.getItem('globalData')),
-                global: JSON.parse(localStorage.getItem('global'))
+                globalData : JSON.parse(sessionStorage.getItem('globalData')),
+                global: JSON.parse(sessionStorage.getItem('global'))
             });
         }else{
             fetchGlobal = this.getGlobalData(startDate, endDate);
         }
 
         Promise.all([fetchEmployee, fetchGlobal, fetchDashboard]).then(() =>{
-            if(localStorage.getItem('countryData')){
+            if(sessionStorage.getItem('countryData')){
                 this.setState({
-                    countryData : JSON.parse(localStorage.getItem('countryData')),
-                    country : JSON.parse(localStorage.getItem('country')),
+                    countryData : JSON.parse(sessionStorage.getItem('countryData')),
+                    country : JSON.parse(sessionStorage.getItem('country')),
                     fetchingData : false
                 });
             }else{
@@ -179,7 +179,7 @@ class LeaderBoard extends Component {
                         let result = response.data;
                         this.setState({ 
                             dashboardData : result});
-                            localStorage.setItem('dashboardData',JSON.stringify(result));
+                            sessionStorage.setItem('dashboardData',JSON.stringify(result));
                     }
                 } else throw new Error('Oops, something went wrong');
             }).catch(error => {
@@ -198,7 +198,7 @@ class LeaderBoard extends Component {
                     if(response.data && response.data.length > 0){
                         this.setState({ 
                             hotelDetails: response.data['0']});
-                        localStorage.setItem('hotelDetails',JSON.stringify(response.data['0']));
+                        sessionStorage.setItem('hotelDetails',JSON.stringify(response.data['0']));
                         return;
                     }
                     this.setState({fetchingData : false }); 
@@ -248,8 +248,8 @@ class LeaderBoard extends Component {
                                 employeeEndOfList    : sortedData.length < 10 ? true : false
                             });
                             if(page === 1){
-                                localStorage.setItem('employeeData',JSON.stringify(oldEmployeeData));
-                                localStorage.setItem('data',JSON.stringify(oldEmployeeData));
+                                sessionStorage.setItem('employeeData',JSON.stringify(oldEmployeeData));
+                                sessionStorage.setItem('data',JSON.stringify(oldEmployeeData));
                             }
                         }
                     }
@@ -299,8 +299,8 @@ class LeaderBoard extends Component {
                                 countryEndOfList    : countryData.length < 10 ? true : false
                             });
                             if(page === 1){
-                                localStorage.setItem('countryData',JSON.stringify(oldCountryData));
-                                localStorage.setItem('country',JSON.stringify(oldCountryData));
+                                sessionStorage.setItem('countryData',JSON.stringify(oldCountryData));
+                                sessionStorage.setItem('country',JSON.stringify(oldCountryData));
                             }
                             this.filterCountries(this.state.globalData);
                         }
@@ -362,8 +362,8 @@ class LeaderBoard extends Component {
                             globalEndOfList    : response.data.length.length < 10 ? true : false
                         });
                         if(page === 1){
-                            localStorage.setItem('global',JSON.stringify(previousData));
-                            localStorage.setItem('globalData',JSON.stringify(previousData));
+                            sessionStorage.setItem('global',JSON.stringify(previousData));
+                            sessionStorage.setItem('globalData',JSON.stringify(previousData));
                         }
                     }
                 } else throw new Error('Oops, something went wrong');
