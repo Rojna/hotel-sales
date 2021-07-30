@@ -111,7 +111,8 @@ class Home extends Component {
                         hotelSearch        : true,
                         hotelSearchResults : true,
                         hotelCode          : response.data[0].HotelCode,
-                        hotelName          : response.data[0].HotelName
+                        hotelName          : response.data[0].HotelName,
+                        countryName        : response.data[0].CountryName
                     });
                     localStorage.setItem('hotelData',JSON.stringify(response.data[0]));
                     const country = getCountry(response.data[0].CountryCode, COUNTRYCODES);
@@ -160,7 +161,8 @@ class Home extends Component {
         if(this.state.showLeaderBoard){
             this.props.history.push('/leaderboard', { 
                 hotelCode      : this.state.hotelCode, 
-                hotelName      : this.state.hotelName
+                hotelName      : this.state.hotelName,
+                countryName    : this.state.countryName
             });
         }
     }

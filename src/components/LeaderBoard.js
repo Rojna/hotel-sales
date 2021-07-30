@@ -48,6 +48,7 @@ class LeaderBoard extends Component {
             selected            : '',
             hotelDetails        : [],
             fetchingData        : true,
+            fetchingDashboardData : true,
             dashboardData       : [],
             activeTab           : 0,
             employeeEndOfList   : false,
@@ -92,7 +93,8 @@ class LeaderBoard extends Component {
 
         if(sessionStorage.getItem('dashboardData')){
             this.setState({
-                dashboardData : JSON.parse(sessionStorage.getItem('dashboardData'))
+                dashboardData : JSON.parse(sessionStorage.getItem('dashboardData'),),
+                fetchingDashboardData : false
             });
         }else{
             fetchDashboard = this.getDashboardData('monthly');
@@ -176,13 +178,14 @@ class LeaderBoard extends Component {
                     if(response.data){
                         let result = response.data;
                         this.setState({ 
-                            dashboardData : result});
+                            dashboardData : result,
+                            fetchingDashboardData : false});
                             sessionStorage.setItem('dashboardData',JSON.stringify(result));
                     }
                 } else throw new Error('Oops, something went wrong');
             }).catch(error => {
                 console.log('error', error) 
-                this.setState({ showGlobalError : true , fetchingData : false });  
+                this.setState({ showGlobalError : true , fetchingDashboardData : false });  
         });
     }
 
@@ -196,7 +199,7 @@ class LeaderBoard extends Component {
                     if(response.data && response.data.length > 0){
                         this.setState({ 
                             hotelDetails: response.data['0']});
-                        sessionStorage.setItem('hotelDetails',JSON.stringify(response.data['0']));
+                            sessionStorage.setItem('hotelDetails',JSON.stringify(response.data['0']));
                         return;
                     }
                     this.setState({fetchingData : false }); 
@@ -281,7 +284,8 @@ class LeaderBoard extends Component {
             .then(response => {
                 if (response.status === 200) {
                     if(page !== 1 && response.data.length === 0){
-                        this.setState({countryEndOfList : true});
+                        this.setState({countryEndOfList : true,
+                            fetchingCountryData : false});
                     } else {
                         if(response.data && response.data.length > 0){
                             let oldCountryData = (page === 1 ? [] : this.state.country);
@@ -343,7 +347,8 @@ class LeaderBoard extends Component {
             .then(response => {
                 if (response.status === 200 ) {
                     if(page !== 1 && response.data.length === 0){
-                        this.setState({globalEndOfList : true});
+                        this.setState({globalEndOfList : true,
+                            fetchingGlobalData : false});
                     } else if(response.data.length > 0) {
                         let previousData = (page == 1 ? [] : this.state.global);
                         let globalData = [];
@@ -483,10 +488,25 @@ class LeaderBoard extends Component {
         const {hotelCode} = this.props.location.state;
         this.setState({
             fetchingData : true,
+            fetchingDashboardData : true,
             employeePage : 1,
             countryPage  : 1,
-            globalPage   : 1
+            globalPage   : 1,
+            dashboardData :[],
+            employeeData : [],
+            countryData : [],
+            globalData : [],
+            hotelDetails : []
         });
+        sessionStorage.setItem('hotelDetails',JSON.stringify([]));
+        sessionStorage.setItem('dashboardData',JSON.stringify([]));
+        sessionStorage.setItem('employeeData',JSON.stringify([]));
+        sessionStorage.setItem('data',JSON.stringify([]));
+        sessionStorage.setItem('countryData',JSON.stringify([]));
+        sessionStorage.setItem('country',JSON.stringify([]));
+        sessionStorage.setItem('global',JSON.stringify([]));
+        sessionStorage.setItem('globalData',JSON.stringify([]));
+
         const fetchDashBoard = this.getDashboardData();
         const fetchEmployee = this.getEmployeeData(startDate, endDate, hotelCode);
         const fetchCountry = this.getCountryData(startDate, endDate);
@@ -520,9 +540,9 @@ class LeaderBoard extends Component {
     
     render() {
         const {filteredData, employeeData, countryData, countryFilteredData, globalData, globalFilteredData, dashboardData, fetchingData} = this.state;
-        const {selected,showLeaderBoard, startDate, endDate, hotelDetails, filterCountry, employeePage, countryPage, globalPage} = this.state;
+        const {selected,showLeaderBoard, startDate, endDate, hotelDetails, filterCountry, fetchingDashboardData, countryPage, globalPage} = this.state;
         const {fetchingEmployeeData, employeeEndOfList, fetchingCountryData, countryEndOfList, fetchingGlobalData, globalEndOfList} = this.state;
-        const {hotelCode, hotelName} = this.props.location.state;
+        const {hotelCode, hotelName, countryName} = this.props.location.state;
         
         const employeeDataMap = (filteredData.length > 0) ? filteredData : employeeData;
         const countryDataMap = (countryFilteredData.length > 0) ? countryFilteredData :countryData;
@@ -531,7 +551,7 @@ class LeaderBoard extends Component {
         const filterByCountry = filterCountry.map((item) =>
             <option value={item}>{item}</option>
         );
-        const colors = ['#E38627', '#C13C37', '#6A2135'];
+        const colors = ['#EC6527', '#713354', '#A51E19', '#6A8863', '#18A09F', '#557B97'];
 
         let pieChartData = [{title: 'No Data', value: 0, color: colors[1] }];
         let pieChart = false;
@@ -615,10 +635,10 @@ class LeaderBoard extends Component {
                     <div className="mt-5 mb-5">
                         <Tabs defaultActiveKey="dashboard" id="uncontrolled-tab-example">
                             <Tab eventKey="dashboard" title="DASHBOARD">
-                                {fetchingData && (
+                                {fetchingDashboardData && (
                                     <LoadingScreen/>
                                 )}
-                                {!fetchingData && (
+                                {!fetchingDashboardData && (
                                     <div className = "row mt-4">
                                     {dashboardData && !_.isEmpty(dashboardData) &&(
                                         <React.Fragment>
@@ -676,12 +696,12 @@ class LeaderBoard extends Component {
                                             <div className="col-12 col-md-8">
                                             <div class="card">
                                                     <div class="card-header">
-                                                        <h3 class="card-title font-weight-bold"><FontAwesomeIcon icon={faListOl}/> Top 5 Hotels in your Country</h3>
+                                                        <h3 class="card-title font-weight-bold"><FontAwesomeIcon icon={faListOl}/> Top 5 Hotels in {countryName ?? 'your Country'}</h3>
                                                     </div>
                                                     <div class="card-body p-0">
                                                         <Accordion>
                                                             <div className="row mt-4 mb-2 mx-0 leaderboardTable-head">
-                                                                <div className="col-2 text-center">Ranking</div>
+                                                                <div className="col-2 text-center">#</div>
                                                                 <div className="mb-0 col-6">
                                                                     Sales Representative Id
                                                                 </div>
@@ -716,7 +736,7 @@ class LeaderBoard extends Component {
                                                                                 <div className="col-2"></div>
                                                                                 <div className="col-10">
                                                                                 {this.getMembershipBreakdown(item).map((element) => 
-                                                                                    <p>{element} : {item.membershipBreakdown[element]}</p>
+                                                                                    <p className="mb-0">{element} : {item.membershipBreakdown[element]}</p>
                                                                                 )}
                                                                                 </div>
                                                                             </div>
@@ -747,7 +767,7 @@ class LeaderBoard extends Component {
                                 {fetchingData && (
                                     <LoadingScreen/>
                                 )}
-                                {!fetchingData && employeeDataMap.length>0 && (
+                                {!fetchingData && employeeDataMap.length > 0 && (
                                     <React.Fragment>
                                         <div className = "row mt-4">
                                             <div className="col-md-8"></div>
@@ -762,7 +782,7 @@ class LeaderBoard extends Component {
                                         </div>
                                         <Accordion>
                                             <div className="row mt-4 mb-2 leaderboardTable-head">
-                                                <div className="col-2 text-center">Ranking</div>
+                                                <div className="col-2 text-center">#</div>
                                                 <div className="mb-0 col-6">
                                                     Sales Representative Id
                                                 </div>
@@ -813,13 +833,13 @@ class LeaderBoard extends Component {
                                         </div> 
                                     </React.Fragment>
                                 )}
-                                {employeeDataMap.length == 0 && !employeeEndOfList && (
+                                {employeeDataMap.length == 0 && (
                                     <div className="font-weight-bold text-center mt-4">
                                         <p><FontAwesomeIcon icon={faExclamation}/> No Data Found! Contact your AccorPlus Ambassador</p>
                                     </div> 
                                 )}
                             </Tab>
-                            <Tab eventKey="country" title="COUNTRY" >
+                            <Tab eventKey="country" title={countryName ?? 'COUNTRY'} >
                                 {fetchingData && (
                                     <LoadingScreen/>
                                 )}
@@ -840,7 +860,7 @@ class LeaderBoard extends Component {
                                     </div>
                                         <Accordion>
                                             <div className="row mt-4 mb-2 leaderboardTable-head">
-                                                <div className="col-1 text-center">Ranking</div>
+                                                <div className="col-1 text-center">#</div>
                                                 <div className="mb-0 col-7">
                                                     Hotel
                                                 </div>
@@ -891,6 +911,11 @@ class LeaderBoard extends Component {
                                         </div> 
                                     </React.Fragment>
                                 )}
+                                {countryDataMap.length == 0 && countryEndOfList && (
+                                    <div className="font-weight-bold text-center mt-4">
+                                        <p><FontAwesomeIcon icon={faExclamation}/> No Sales Found </p>
+                                    </div> 
+                                )}
                                 {countryDataMap.length == 0 && !countryEndOfList && (
                                     <div className="font-weight-bold text-center mt-4">
                                         <p><FontAwesomeIcon icon={faExclamation}/> No Data Found! Contact your AccorPlus Ambassador</p>
@@ -924,7 +949,7 @@ class LeaderBoard extends Component {
                                         </div>
                                         <Accordion>
                                             <div className="row mt-4 mb-2 leaderboardTable-head">
-                                                <div className="col-1 text-center">Ranking</div>
+                                                <div className="col-1 text-center">#</div>
                                                 <div className="mb-0 col-6">
                                                     Hotel
                                                 </div>
@@ -965,11 +990,8 @@ class LeaderBoard extends Component {
                                                                 <div className="col-1"></div>
                                                                 <div className="col-11">
                                                                     {this.getMembershipBreakdown(item).map((element) => 
-                                                                        <p>{element} : {item.membershipBreakdown[element]}</p>
+                                                                        <p className="mb-0">{element} : {item.membershipBreakdown[element]}</p>
                                                                     )}
-                                                                    {/* {item.membershipBreakdown && Object.entries(item.membershipBreakdown).forEach(([key, value]) => {
-                                                                        <p>{key} : {value}</p>
-                                                                    })} */}
                                                                 </div>
                                                             </div>
                                                         </Card.Body>
