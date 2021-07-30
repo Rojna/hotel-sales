@@ -24,11 +24,6 @@
     color: white;
 }
 
-.table .active { 
-    color: white;
-    background: #6c757d;
-}
-
 .leaderboard h4 {
    font-size : 1.25rem;
 }
@@ -70,6 +65,10 @@
 
 .leaderboardTable-body .card-header, .leaderboardTable-body .card-body {
     padding: 10px 0;
+}
+
+.leaderboardTable-body.active.card { 
+    background: #e4e4e4;
 }
 
 .leaderboard .info-box-icon {

@@ -68,7 +68,7 @@ class LeaderBoard extends Component {
         const {hotelCode} = this.props.location.state;
         let fetchEmployee, fetchGlobal, fetchDashboard;
 
-        if(localStorage.getItem('hotelDetails') && localStorage.getItem('dashboardData')){
+        if(localStorage.getItem('hotelDetails')){
             const rid_code = JSON.parse(localStorage.getItem('hotelDetails')).rid_code;
             const hotelCode = JSON.parse(localStorage.getItem('hotelData')).HotelCode;
             if( rid_code != hotelCode){
@@ -84,9 +84,16 @@ class LeaderBoard extends Component {
             } else{
                 this.setState({
                     hotelDetails  : JSON.parse(localStorage.getItem('hotelDetails')),
-                    dashboardData : JSON.parse(localStorage.getItem('dashboardData'))
             });
             }
+        }else{
+            fetchDashboard = this.getDashboardData('monthly');
+        }
+
+        if(localStorage.getItem('dashboardData')){
+            this.setState({
+                dashboardData : JSON.parse(localStorage.getItem('dashboardData'))
+            });
         }else{
             fetchDashboard = this.getDashboardData('monthly');
         }
@@ -117,6 +124,7 @@ class LeaderBoard extends Component {
                 });
             }else{
                  this.getCountryData(startDate, endDate);
+                 this.setState({fetchingData : false});
             }
         });
     }
@@ -148,26 +156,36 @@ class LeaderBoard extends Component {
     getDashboardData = async (type) => {
         const {startDate, endDate} = this.state;
         const {hotelCode} = this.props.location.state;
+        let start = moment(startDate).format("DD/MM/YYYY");
+        const end = moment(endDate).format("DD/MM/YYYY");
 
-        await this.getHotelDetails(startDate, endDate, hotelCode);
-        const subsidiary =  this.state.hotelDetails ?  this.state.hotelDetails.subsidiary : "";
-        if(subsidiary){
-            await axios.get(`${this.getUrl().apiURL+'leaderboarddashboard?type='+type+'&subsidiary='+subsidiary+'&ridCode='+hotelCode}`, GLOBALAPIHEADER)
-                .then(response => {
-                    if (response.status === 200) {
-                        if(response.data){
-                            let result = response.data;
-                            this.setState({ 
-                                dashboardData : result});
-                            localStorage.setItem('dashboardData',JSON.stringify(result));
-                        }
-                        this.setState({fetchingData : false }); 
-                    } else throw new Error('Oops, something went wrong');
-                }).catch(error => {
-                    console.log('error', error) 
-                    this.setState({ showGlobalError : true , fetchingData : false });  
-            });
+        if(!this.state.hotelDetails.subsidiary){
+            await this.getHotelDetails(startDate, endDate, hotelCode);
         }
+        const subsidiary =  this.state.hotelDetails ?  this.state.hotelDetails.subsidiary : "";
+        let url = `${this.getUrl().apiURL+'leaderboarddashboard?ridCode='+hotelCode}`;
+        if(subsidiary){
+           url = url + `${'&subsidiary='+subsidiary}`
+        }
+        if(type){
+            url = url + `${'&type='+type}`;
+        }else{
+            url = url + `${'&start_date='+start+'&end_date='+end}`;
+        }
+        await axios.get(url, GLOBALAPIHEADER)
+            .then(response => {
+                if (response.status === 200) {
+                    if(response.data){
+                        let result = response.data;
+                        this.setState({ 
+                            dashboardData : result});
+                            localStorage.setItem('dashboardData',JSON.stringify(result));
+                    }
+                } else throw new Error('Oops, something went wrong');
+            }).catch(error => {
+                console.log('error', error) 
+                this.setState({ showGlobalError : true , fetchingData : false });  
+        });
     }
 
     getHotelDetails = async (startDate, endDate, ridCode) => {
@@ -469,10 +487,11 @@ class LeaderBoard extends Component {
             countryPage  : 1,
             globalPage   : 1
         });
+        const fetchDashBoard = this.getDashboardData();
         const fetchEmployee = this.getEmployeeData(startDate, endDate, hotelCode);
         const fetchCountry = this.getCountryData(startDate, endDate);
         const fetchGlobal = this.getGlobalData(startDate, endDate);
-        Promise.all([ fetchEmployee, fetchCountry, fetchGlobal ]).then(() => {
+        Promise.all([ fetchDashBoard, fetchEmployee, fetchCountry, fetchGlobal ]).then(() => {
             this.setState({fetchingData : false});
             this.filterCountries(this.state.globalData);
         });
