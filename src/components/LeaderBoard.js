@@ -50,7 +50,7 @@ class LeaderBoard extends Component {
             fetchingData        : true,
             fetchingDashboardData : true,
             dashboardData       : [],
-            activeTab           : 0,
+            activeDropDown      : 'monthly',
             employeeEndOfList   : false,
             countryEndOfList   : false,
             globalEndOfList   : false,
@@ -65,7 +65,7 @@ class LeaderBoard extends Component {
     }
 
     componentDidMount() {
-        const {startDate, endDate} = this.state;
+        const {startDate, endDate, activeDropDown} = this.state;
         const {hotelCode} = this.props.location.state;
         let fetchEmployee, fetchGlobal, fetchDashboard;
 
@@ -81,14 +81,14 @@ class LeaderBoard extends Component {
                 sessionStorage.removeItem('global');
                 sessionStorage.removeItem('countryData');
                 sessionStorage.removeItem('country');
-                fetchDashboard = this.getDashboardData('monthly');
+                fetchDashboard = this.getDashboardData(activeDropDown);
             } else{
                 this.setState({
                     hotelDetails  : JSON.parse(sessionStorage.getItem('hotelDetails')),
             });
             }
         }else{
-            fetchDashboard = this.getDashboardData('monthly');
+            fetchDashboard = this.getDashboardData(activeDropDown);
         }
 
         if(sessionStorage.getItem('dashboardData')){
@@ -97,7 +97,7 @@ class LeaderBoard extends Component {
                 fetchingDashboardData : false
             });
         }else{
-            fetchDashboard = this.getDashboardData('monthly');
+            fetchDashboard = this.getDashboardData(activeDropDown);
         }
 
         if(sessionStorage.getItem('employeeData')){
@@ -152,6 +152,9 @@ class LeaderBoard extends Component {
 
     handleTypeChange = (event) =>{ 
         const type =  event.target.value ?? 'monthly';
+        this.setState({
+            activeDropDown : type,
+            fetchingDashboardData : true});
         this.getDashboardData(type);
     }
 
@@ -540,7 +543,7 @@ class LeaderBoard extends Component {
     
     render() {
         const {filteredData, employeeData, countryData, countryFilteredData, globalData, globalFilteredData, dashboardData, fetchingData} = this.state;
-        const {selected,showLeaderBoard, startDate, endDate, hotelDetails, filterCountry, fetchingDashboardData, countryPage, globalPage} = this.state;
+        const {selected,showLeaderBoard, startDate, endDate, hotelDetails, filterCountry, fetchingDashboardData, activeDropDown, globalPage} = this.state;
         const {fetchingEmployeeData, employeeEndOfList, fetchingCountryData, countryEndOfList, fetchingGlobalData, globalEndOfList} = this.state;
         const {hotelCode, hotelName, countryName} = this.props.location.state;
         
@@ -646,8 +649,8 @@ class LeaderBoard extends Component {
                                             </div>
                                             <div className="col-12 col-md-4 mb-3">
                                                 <select className="form-control" onChange={this.handleTypeChange}>
-                                                    <option value = "monthly">Monthly</option>
-                                                    <option value ="weekly" >Weekly</option>
+                                                    <option value= "monthly" selected={activeDropDown === 'monthly' ? true : false}>Monthly</option>
+                                                    <option value="weekly" selected={activeDropDown === 'weekly' ? true : false}>Weekly</option>
                                                 </select>
                                             </div>
                                             <div className="col-12 col-md-4">
