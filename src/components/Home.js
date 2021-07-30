@@ -10,10 +10,10 @@ import { HOTELSEARCH_CODEURL, COUNTRYCODES } from './../constants/index';
 import { getCountry, setBenefits, setLanguage } from './Helper.js';
 
 import auData from '../data/benefits.json';
-import idData from '../data/benefits.json';
-import myData from '../data/benefits.json';
-import thData from '../data/benefits.json';
-import vnData from '../data/benefits.json';
+import idData from '../data/id/benefits.json';
+import myData from '../data/my/benefits.json';
+import thData from '../data/th/benefits.json';
+import vnData from '../data/vn/benefits.json';
 
 import languages from '../data/language-test.json';
 import '../css/style.css';
