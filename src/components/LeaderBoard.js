@@ -649,8 +649,8 @@ class LeaderBoard extends Component {
                                             </div>
                                             <div className="col-12 col-md-4 mb-3">
                                                 <select className="form-control" onChange={this.handleTypeChange}>
-                                                    <option value= "monthly" selected={activeDropDown === 'monthly' ? true : false}>Monthly</option>
-                                                    <option value="weekly" selected={activeDropDown === 'weekly' ? true : false}>Weekly</option>
+                                                    <option value= "monthly" selected={activeDropDown === 'monthly' ? true : false}>This Month</option>
+                                                    <option value="weekly" selected={activeDropDown === 'weekly' ? true : false}>This Week</option>
                                                 </select>
                                             </div>
                                             <div className="col-12 col-md-4">
