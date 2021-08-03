@@ -29,7 +29,7 @@ class EmployeeDetail extends Component {
         if(localStorage.getItem('hotelData') && this.props.history.location.state.language){
             const hotelData = JSON.parse(localStorage.getItem('hotelData'));
             this.setState({
-                countryCode        : hotelData.countryCode
+                countryCode        : hotelData.CountryCode
             });
         }else{
             window.location.href = "/";
@@ -58,7 +58,7 @@ class EmployeeDetail extends Component {
                 priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_ID;
             }
 
-            const url =  urlRoot + getFromSession("countryCode").toLowerCase() + "/registration?hotelRIDOnlineKiosk="+state.hotelCode+"&apHotelEmployeeName="+staffName+"&hotelEmployee="+staffName + "&apHotelEmployeeId="+ staffId + priceLevel;
+            const url =  urlRoot + countryCode.toLowerCase() + "/registration?hotelRIDOnlineKiosk="+state.hotelCode+"&apHotelEmployeeName="+staffName+"&hotelEmployee="+staffName + "&apHotelEmployeeId="+ staffId + priceLevel;
             console.log("URL", url);
             window.location.href = url;
         }
@@ -76,7 +76,8 @@ class EmployeeDetail extends Component {
         if(state.showLeaderBoard){
             this.props.history.push('/leaderboard', { 
                 hotelCode      : state.hotelCode, 
-                hotelName      : state.hotelName
+                hotelName      : state.hotelName,
+                countryName    : this.state.countryName
             });
         }
     }

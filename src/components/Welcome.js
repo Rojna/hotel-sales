@@ -1,15 +1,42 @@
 import React from 'react';
 import checkbox from "../images/check_box-24px 1.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faCheck, faChevronRight, faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 
 class Welcome extends React.Component  {
+    constructor(props) {
+        super(props);
+        this.handleChange   = this.handleChange.bind(this);
+    }
+        
+    handleChange = (e) =>{
+        const selected = e.target.value;
+        const url = selected === "au" ? "/" : "/"+selected;
+        console.log('rojeena', url);
+        window.location.href = url;
+    }
+
     render() {
-        const {language, handleChange, showModal, showError, handleNext, handleClick, hotelCode, hotelName, hotelSearchResults, hotelSearch} = this.props;
+        const {language, handleChange, showModal, showError, handleNext, handleClick, hotelCode, hotelName, hotelSearchResults, hotelSearch, translateLanguage, region} = this.props;
         return (
             <div className="hotelSales-hotelDetails container">
-            <div className="hotelSales-welcomeMsg mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-10 col-sm-9"></div>
+                    <div class="col-12 col-md-2 col-sm-3">
+                        <div className="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><FontAwesomeIcon icon={faGlobe} /></span>
+                                </div>
+                                <select className="form-control" onChange={this.handleChange}>
+                                {translateLanguage.map((key) => <option value={key[0]} selected={region === key[0] ? true: false}>{key[1]}</option>)}
+                                </select> 
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            <div className="hotelSales-welcomeMsg mt-3">
                 <div>
                     <h4>{language.welcome}</h4>
                     <p>{language.beforeWeGetStarted}</p>

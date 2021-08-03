@@ -3,13 +3,13 @@ export const getUrl=()=>{
     if(urlPath.indexOf("localhost") != -1) {
         return {
             baseUrl : "",
-            urlRoot : "https://alb.nuat.accorplus.com/",
+            urlRoot : "https://accorstaging.wpstaging.io/",
             googleApiUrl: "https://script.google.com/macros/s/AKfycbxKQYwf3YcGvBwxeV4RTnlFN4j-Fjt37ngupqITDjjuu58wwBBd038719XOGjwHWueRVg/exec"
         };
     } else if(window.location.host.indexOf("dev-hotelsales") != -1) {
         return {
             baseUrl : "https://dev-hotelsales.accorplus.com",
-            urlRoot : "https://alb.nuat.accorplus.com/",
+            urlRoot : "https://accorstaging.wpstaging.io/",
             googleApiUrl: "https://script.google.com/macros/s/AKfycbxKQYwf3YcGvBwxeV4RTnlFN4j-Fjt37ngupqITDjjuu58wwBBd038719XOGjwHWueRVg/exec"
         };
     } else {

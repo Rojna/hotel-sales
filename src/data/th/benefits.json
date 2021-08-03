@@ -2708,6 +2708,12 @@
                     "price": "",
                     "image": "/images/cbimage.jpg",
                     "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "THB 7,200 บาท",
+                    "price": "",
+                    "image": "/images/cbimage.jpg",
+                    "name": "Explorer"
                 }
             },
             "benefits": [
@@ -2718,6 +2724,10 @@
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/x-8x.png"
+                    },
+                    "explorer": {
+                        "content": "1 คืน",
+                        "image": ""
                     },
                     "description": "มอบห้องพักฟรีหนึ่งคืนต่อปีกับสิทธิประโยชน์ Stay Plus ที่โรงแรมและรีสอร์ตของ Accor ที่เข้าร่วมรายการกว่า 1,000 แห่งให้กับคุณ ตั้งแต่เมืองใหญ่ไปจนถึงริมทะเล และแบบประหยัดไปจนถึงหรูหรา ใช้สิทธิประโยชน์เข้าพักของคุณฟรีได้ตามต้องการ",
                     "learnmore": {
@@ -2730,6 +2740,10 @@
                     "cid": "benefitc2",
                     "subtitle": "ส่วนลดสำหรับสมาชิก 10% จากอัตราค่าห้องพักที่ดีที่สุด",
                     "traveller": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
+                    "explorer": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
@@ -2747,6 +2761,10 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
+                    "explorer": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
                     "description": "ประหยัดค่าโรงแรมหรือรีสอร์ตมากถึง 50% กับข้อเสนอ Red Hot Rooms พิเศษเฉพาะสมาชิก Accor Plus ข้อเสนอ Red Hot Rooms มอบส่วนลดมากมายที่โรงแรม Accor หลายแห่งในเอเชีย แปซิฟิก",
                     "learnmore": {
                         "link":"https://www.accorplus.com/th-th/benefits/more-nights",
@@ -2758,6 +2776,10 @@
                     "cid": "benefitc4",
                     "subtitle": "ข้อเสนอพิเศษ More Escapes packages",
                     "traveller": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
+                    "explorer": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
@@ -2775,6 +2797,10 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
+                    "explorer": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
                     "description": "ยิ่งไปกว่านั้น สมาชิก Accor Plus สามารถเข้าถึง Accor Global Sales ก่อนใคร ไม่เพียงแต่คุณจะเข้าถึงการลดราคา Accor Super และ Private ล่วงหน้าสองวันแล้ว แต่คุณยังจะได้รับส่วนลดจากราคาโปรโมชั่นเพิ่มอีก 10% ด้วย ",
                     "learnmore": ""
                 },
@@ -2783,6 +2809,10 @@
                     "cid": "benefitc6",
                     "subtitle": "ส่วนลดค่าอาหารสูงสุด 50% ในเอเชีย แปซิฟิก",
                     "traveller": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
+                    "explorer": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
@@ -2800,6 +2830,10 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
+                    "explorer": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
                     "description": "ส่วนลดค่าเครื่องดื่ม 15% ที่ห้องอาหารและบาร์ของโรงแรมที่น่วมรายการในเอเชีย",
                     "learnmore": {
                         "link":"https://www.accorplus.com/th-th/benefits/more-flavours",
@@ -2811,6 +2845,10 @@
                     "cid": "benefitc8",
                     "subtitle": "กิจกรรมสุดเอ็กซ์คลูซีฟสำหรับสมาชิก",
                     "traveller": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
+                    "explorer": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
@@ -2828,6 +2866,10 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
+                    "explorer": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
                     "description": "รับรางวัลสมาชิกสถานะ Elite Silver ใน ALL- Accor Live Limitless โปรแกรมใหม่แนวไลฟ์สไตล์สำหรับลูกค้า ไม่ว่าคุณจะเดินทางเพื่อทำงานหรือพักผ่อน ทุกคืนที่คุณเข้าพักกับ Accor คุณจะได้รับคะแนนเพื่อประสบการณ์การเดินทางที่น่าจดจำยิ่งขึ้นไปอีกในครั้งต่อๆ ไป",
                     "learnmore": {
                         "link":"https://www.accorplus.com/th-th/benefits/more-rewards",
@@ -2840,6 +2882,10 @@
                     "subtitle": "ราคาสมาชิกต่อปี",
                     "traveller": {
                         "content": "THB 5,000 บาท",
+                        "image": ""
+                    },
+                    "explorer": {
+                        "content": "THB 7,200 บาท",
                         "image": ""
                     },
                     "description": "สมัครสมาชิกวันนี้",

@@ -6,7 +6,7 @@ import HotelSearchModal from './HotelSearchModal';
 import LoadingScreen from './common/loading-screen';
 import Benefits from './Benefits.js';
 
-import { HOTELSEARCH_CODEURL, COUNTRYCODES } from './../constants/index';
+import { HOTELSEARCH_CODEURL, COUNTRYCODES, DOMAINS, MAP_COUNTRYCODES} from './../constants/index';
 import { getCountry, setBenefits, setLanguage } from './Helper.js';
 
 import auData from '../data/benefits.json';
@@ -17,6 +17,7 @@ import vnData from '../data/vn/benefits.json';
 
 import languages from '../data/language-test.json';
 import '../css/style.css';
+import { templateSettings } from 'lodash';
 
 class Home extends Component {
     constructor(props) {
@@ -168,12 +169,28 @@ class Home extends Component {
     }
 
     render() {
-        const {hotelSearch, hotelSearchResults, hotelName, hotelCode, show, benefitResults, showError, language, showLeaderBoard} = this.state;
+        const {hotelSearch, hotelSearchResults, hotelName, hotelCode, show, benefitResults, showError, language, showLeaderBoard, region} = this.state;
+        let translateLanguage = [];
+        if(localStorage.getItem('languages')){
+            const index=0;
+            const domains = JSON.parse(localStorage.getItem('languages'));
+            Object.entries(domains).map(([key, i]) => {
+                //translateLanguage[key] = MAP_COUNTRYCODES[key.toUpperCase()];
+                 const test={};
+                 test[0] = key;
+                 test[1] = key === "au" ? "English" : MAP_COUNTRYCODES[key.toUpperCase()];
+                 translateLanguage.push(test);
+            });
+        }else{
+            DOMAINS.map((key) => {
+                translateLanguage[key] = MAP_COUNTRYCODES[key.toUpperCase()];
+            });
+        }
         return (
             <div className="hotelSales-wrapper">
                 <Header 
                     showLeaderBoard   = {showLeaderBoard}
-                    handleLeaderBoard = {this.handleLeaderBoard}/>
+                    handleLeaderBoard = {this.handleLeaderBoard}/> 
                 <Welcome
                     language    = {language} 
                     showError   = {showError}
@@ -186,7 +203,9 @@ class Home extends Component {
                     showModal   = {this.showModal}
                     handleClick = {this.handleClick}
                     handleChange = {this.handleChange}
-                    handleNext   = {this.handleNext} />
+                    handleNext   = {this.handleNext}
+                    translateLanguage = {translateLanguage}
+                    region = {region} />
                
                 <Benefits data = {benefitResults}/>
                 <HotelSearchModal 

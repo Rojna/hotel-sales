@@ -59,3 +59,5 @@ export const MAP_COUNTRYCODES = {
     ''   : 'N/A'
 };
 
+export const DOMAINS = ["au","id","vn","th","my"];
+

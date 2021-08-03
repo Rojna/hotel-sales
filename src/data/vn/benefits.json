@@ -2708,6 +2708,12 @@
                     "price": "",
                     "image": "/images/cbimage.jpg",
                     "name": "Traveller"
+                },
+                "explorer": {
+                    "priceOld": "THB 7,200",
+                    "price": "",
+                    "image": "/images/cbimage.jpg",
+                    "name": "Explorer"
                 }
             },
             "benefits": [
@@ -2718,6 +2724,10 @@
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/x-8x.png"
+                    },
+                    "explorer": {
+                        "content": "1 night",
+                        "image": ""
                     },
                     "description": "The Stay Plus benefit entitles you to a complimentary night each year at one of over 1,000 participating Accor hotels and resorts. From city to sea and economy to luxury, use your benefit to stay for free.",
                     "learnmore": {
@@ -2730,6 +2740,10 @@
                     "cid": "benefitc2",
                     "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
                     "traveller": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
+                    "explorer": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
@@ -2747,6 +2761,10 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
+                    "explorer": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
                     "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-th/benefits/more-nights",
@@ -2758,6 +2776,10 @@
                     "cid": "benefitc4",
                     "subtitle": "Member exclusive More Escapes packages",
                     "traveller": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
+                    "explorer": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
@@ -2775,6 +2797,10 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
+                    "explorer": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
                     "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
@@ -2783,6 +2809,10 @@
                     "cid": "benefitc6",
                     "subtitle": "Up to 50% off dining across Asia Pacifi",
                     "traveller": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
+                    "explorer": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
@@ -2800,6 +2830,10 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
+                    "explorer": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
                     "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-th/benefits/more-flavours",
@@ -2811,6 +2845,10 @@
                     "cid": "benefitc8",
                     "subtitle": "Member exclusive events and experiences",
                     "traveller": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
+                    "explorer": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
@@ -2828,6 +2866,10 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
+                    "explorer": {
+                        "content": false,
+                        "image": "/images/open-iconic/png/check-8x.png"
+                    },
                     "description": "Be rewarded with Elite Silver status membership in ALL - Accor Live Limitless, Accor's global lifestyle loyalty programme. Whether you travel for business or leisure, every night you spend at an Accor property rewards you with points towards even more memorable travel experiences.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-th/benefits/more-rewards",
@@ -2840,6 +2882,10 @@
                     "subtitle": "MEMBERSHIP PRICE",
                     "traveller": {
                         "content": "THB 5,000",
+                        "image": ""
+                    },
+                    "explorer": {
+                        "content": "THB 7,200",
                         "image": ""
                     },
                     "description": "Join Accor Plus today.",
