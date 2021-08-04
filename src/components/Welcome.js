@@ -7,13 +7,12 @@ import { faCheck, faChevronRight, faGlobe } from '@fortawesome/free-solid-svg-ic
 class Welcome extends React.Component  {
     constructor(props) {
         super(props);
-        this.handleChange   = this.handleChange.bind(this);
+        this.handleLanguageChange   = this.handleLanguageChange.bind(this);
     }
         
-    handleChange = (e) =>{
+    handleLanguageChange = (e) =>{
         const selected = e.target.value;
         const url = selected === "au" ? "/" : "/"+selected;
-        console.log('rojeena', url);
         window.location.href = url;
     }
 
@@ -29,7 +28,7 @@ class Welcome extends React.Component  {
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><FontAwesomeIcon icon={faGlobe} /></span>
                                 </div>
-                                <select className="form-control" onChange={this.handleChange}>
+                                <select className="form-control" onChange={this.handleLanguageChange}>
                                 {translateLanguage.map((key) => <option value={key[0]} selected={region === key[0] ? true: false}>{key[1]}</option>)}
                                 </select> 
                             </div>

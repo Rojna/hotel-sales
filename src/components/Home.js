@@ -106,7 +106,6 @@ class Home extends Component {
 
         axios.get(`${HOTELSEARCH_CODEURL}?HotelCode=${this.state.hotelCode}`)
             .then(response => {
-                console.log(response.data[0].HotelCode);
                 if (response.status === 200) {
                     this.setState({
                         hotelSearch        : true,
@@ -124,19 +123,23 @@ class Home extends Component {
                         showLeaderBoard : true
                     });
                     this.hideModal();
-                } else throw new Error('Oops, something went wrong');
+                } 
             }).catch(error => {
                 this.setState({
                     hotelSearch        : true,
-                    hotelSearchResults : false
+                    hotelSearchResults : false,
+                    hotelName          : '',
+                    countryName        : ''
                 });
+                localStorage.removeItem('hotelData');
+                localStorage.removeItem('countryCode');
         });
     };
 
     handleNext = () => {
-        const {hotelCode , hotelName, benefitResults, language, showLeaderBoard} =this.state;
+        const {hotelCode , hotelName, benefitResults, language, showLeaderBoard, hotelSearch, hotelSearchResults} =this.state;
         const url = (this.state.region == 'au' ? '': '/'+this.state.region);
-        if(hotelCode && localStorage.getItem('hotelData')){
+        if(hotelCode && hotelSearch && localStorage.getItem('hotelData')){
             this.props.history.push(url+'/employee-details', { 
                 hotelCode         : hotelCode, 
                 hotelName         : hotelName,
@@ -150,7 +153,10 @@ class Home extends Component {
     };
 
     handleChange = (e) => {
-        this.setState({hotelCode: e.target.value});
+        this.setState({
+            hotelSearch : false,
+            hotelCode : e.target.value
+        });
     };
 
     async saveHotelSearch(code){

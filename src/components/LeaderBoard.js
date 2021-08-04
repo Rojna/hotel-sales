@@ -705,14 +705,9 @@ class LeaderBoard extends Component {
                                                         <Accordion>
                                                             <div className="row mt-4 mb-2 mx-0 leaderboardTable-head">
                                                                 <div className="col-2 text-center">#</div>
-                                                                <div className="mb-0 col-6">
-                                                                    Sales Representative Id
-                                                                </div>
-                                                                <div className="mb-0 col-3 text-center">
-                                                                    Total
-                                                                </div>
-                                                                <div className="mb-0 col-1">
-                                                                </div>  
+                                                                <div className="mb-0 col-6">Hotel</div>
+                                                                <div className="mb-0 col-3 text-center">Total</div>
+                                                                <div className="mb-0 col-1"></div>  
                                                             </div>
                                                             {dashboardData.topHotels && dashboardData.topHotels.map((item, index) =>
                                                                 <Card key={index} className={hotelCode === item.rid_code ? 'leaderboardTable-body active' : 'leaderboardTable-body'}>
@@ -723,7 +718,7 @@ class LeaderBoard extends Component {
                                                                             </div>
                                                                             <div className="mb-0 col-6">
                                                                                     <p className="mb-1 font-weight-bold">{item.vendorName}</p> 
-                                                                                <p className="mb-0">RID {item.rid_code}</p>
+                                                                                    <p className="mb-0">RID {item.rid_code}</p>
                                                                             </div>
                                                                             <div className="mb-0 col-3 text-center">
                                                                                 {item.unitsSold}
@@ -786,14 +781,9 @@ class LeaderBoard extends Component {
                                         <Accordion>
                                             <div className="row mt-4 mb-2 leaderboardTable-head">
                                                 <div className="col-2 text-center">#</div>
-                                                <div className="mb-0 col-6">
-                                                    Sales Representative Id
-                                                </div>
-                                                <div className="mb-0 col-3 text-center">
-                                                    Total
-                                                </div>
-                                                <div className="mb-0 col-1">
-                                                </div>  
+                                                <div className="mb-0 col-6">Heartist</div>
+                                                <div className="mb-0 col-3 text-center"> Total</div>
+                                                <div className="mb-0 col-1"></div>  
                                             </div>
                                             {employeeDataMap.map((item, index) =>
                                                 <Card key={index} className="leaderboardTable-body">
@@ -803,8 +793,9 @@ class LeaderBoard extends Component {
                                                                 {this.getRanking(item.index)}
                                                             </div>
                                                             <div className="mb-0 col-6">
-                                                                {item.salesRepId}
-                                                                {!item.salesRepId && <span className="font-weight-normal">Unknown Sales Rep</span>}
+                                                                Heartist{item.index}
+                                                                {/* {item.salesRepId}
+                                                                {!item.salesRepId && <span className="font-weight-normal">Unknown Heartist</span>} */}
                                                             </div>
                                                             <div className="mb-0 col-3 text-center">
                                                                 {item.unitsSold}
