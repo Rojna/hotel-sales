@@ -129,7 +129,9 @@ class Home extends Component {
                     hotelSearch        : true,
                     hotelSearchResults : false,
                     hotelName          : '',
-                    countryName        : ''
+                    countryName        : '',
+                    showLeaderBoard    : false,
+                    benefitResults     : {}
                 });
                 localStorage.removeItem('hotelData');
                 localStorage.removeItem('countryCode');
@@ -154,8 +156,9 @@ class Home extends Component {
 
     handleChange = (e) => {
         this.setState({
-            hotelSearch : false,
-            hotelCode : e.target.value
+            hotelSearch        : false,
+            hotelCode          : e.target.value,
+            showLeaderBoard    : false
         });
     };
 
