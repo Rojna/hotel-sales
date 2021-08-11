@@ -53,7 +53,7 @@ class Welcome extends React.Component  {
             <div className="hotel-code-container row">
                 <div className="form-group col-12 col-md-6">
                     <label className="ridCode">{language.hotelRIDCode} <sup>*</sup></label>
-                    <input type="text" placeholder="Enter RID Code" className={`form-control ${showError ? ' border border-danger' : ''}`} required value={hotelCode} onChange={handleChange}/>
+                    <input type="text" placeholder="Enter RID Code" className={`form-control ${showError ? ' border border-danger' : ''}`} required value={hotelCode.toUpperCase()} onChange={handleChange}/>
                     {showError && (
                         <div className="error">{language.enterRIDCode} <a onClick= {showModal} href="#">{language.clickHere}</a>.</div>
                     )}

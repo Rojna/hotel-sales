@@ -20,8 +20,7 @@ class EmployeeDetail extends Component {
         super(props);
         this.state = {
             showError : false,
-            staffName : '',
-            staffId   : ''
+            staffName : ''
         };
     }
 
@@ -37,7 +36,7 @@ class EmployeeDetail extends Component {
     }
 
     handleNext = () => {
-        const {staffName, staffId, countryCode} =this.state;
+        const {staffName, countryCode} =this.state;
         const { state } = this.props.history.location;
         const urlRoot = getUrl().urlRoot;
         var priceLevel;
@@ -58,7 +57,7 @@ class EmployeeDetail extends Component {
                 priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_ID;
             }
 
-            const url =  urlRoot + countryCode.toLowerCase() + "/registration?hotelRIDOnlineKiosk="+state.hotelCode+"&apHotelEmployeeName="+staffName+"&hotelEmployee="+staffName + "&apHotelEmployeeId="+ staffId + priceLevel;
+            const url =  urlRoot + countryCode.toLowerCase() + "/registration?hotelRIDOnlineKiosk="+state.hotelCode+"&apHotelEmployeeName="+staffName+"&hotelEmployee="+staffName + priceLevel;
             console.log("URL", url);
             window.location.href = url;
         }
@@ -85,7 +84,7 @@ class EmployeeDetail extends Component {
 
     render() {
         const { state } = this.props.history.location;
-        const { showError, staffName, staffId } = this.state;
+        const { showError, staffName } = this.state;
         return (
             <div className="hotelSales-wrapper">
                 <Header 
@@ -123,19 +122,6 @@ class EmployeeDetail extends Component {
                             {showError && (
                                 <div className="error">{state.language.missingEmployee}</div>
                             )}
-                        </div>
-
-                        <div className="form-group col-12 col-md-6">
-                            <label for="staffId">
-                                {state.language.yourstaffID}
-                            </label>
-                            <input 
-                                name        = "staffId" 
-                                type        = "text" 
-                                placeholder = {state.language.enterStaffID} 
-                                className   = "form-control"
-                                value       = {staffId} 
-                                onChange    = {this.handleChange} />
                         </div>
                     </div>
 

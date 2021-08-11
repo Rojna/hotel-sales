@@ -59,5 +59,24 @@ export const MAP_COUNTRYCODES = {
     ''   : 'N/A'
 };
 
+export const MAP_COUNTRYLOGO = {
+    'AU' : '/images/logo/au.png', 
+    'CN' : '/images/logo/cn.png', 
+    'FJ' : '/images/logo/fj.png', 
+    'IN' : '/images/logo/in.png', 
+    'ID' : '/images/logo/id.png', 
+    'MO' : '/images/logo/mo.png', 
+    'MY' : '/images/logo/my.png', 
+    'NZ' : '/images/logo/default.png', 
+    'PH' : '/images/logo/ph.png', 
+    'SG' : '/images/logo/sg.png', 
+    'TW' : '/images/logo/tw.png', 
+    'TH' : '/images/logo/th.png', 
+    'VN' : '/images/logo/vn.png',
+    'KR' : '/images/logo/kr.png',
+    'LA' : '/images/logo/default.png',
+    ''   : '/images/logo/default.png'
+};
+
 export const DOMAINS = ["au","id","vn","th","my"];
 
