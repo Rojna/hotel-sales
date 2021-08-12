@@ -130,7 +130,7 @@ class EmployeeDetail extends Component {
                     </div>
 
                     <div className="d-flex justify-content-between">
-                        <p class="disclaimer">*mandatory question{state.language.employeeType}</p>
+                        <p class="disclaimer">*{state.language.mandatoryQuestion}</p>
                     </div>
 
                     <div className="d-flex justify-content-between">
