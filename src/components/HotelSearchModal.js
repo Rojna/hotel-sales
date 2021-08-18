@@ -21,7 +21,8 @@ class HotelSearchModal extends Component {
 
     handleClick = () => {
         var dataResults = data;
-        dataResults = dataResults.filter((item) => item.HotelName.includes(this.state.searchedHotelName.toUpperCase()));
+        // dataResults = dataResults.filter((item) => item.HotelName.includes(this.state.searchedHotelName.toUpperCase()));
+        dataResults = this.haystackSearch(data, this.state.searchedHotelName.toLowerCase());
         console.log("Search criteria: " + this.state.searchedHotelName);
         console.log(dataResults);
         this.setState({
@@ -29,6 +30,31 @@ class HotelSearchModal extends Component {
             showResults   : true
         });
     };
+
+    
+    haystackSearch(haystack, needle) {
+        var searchedArray = [];
+        var needles = needle.split(" ");
+        for(var i=0;i<haystack.length;i++) {
+            var found = [];
+            for(var j=0;j<needles.length;j++){
+                if(haystack[i].HotelName.toLowerCase().indexOf(needles[j]) != -1) {
+                    found.push(true);
+                }
+            }
+            
+            if(found.length == needles.length) {
+                searchedArray.push(haystack[i]);
+            }
+            //search one string
+            /*if(haystack[i].HotelName.toLowerCase().indexOf(needle) != -1) {
+                //console.log("found needle: " + haystack[i].HotelName);
+                searchedArray.push(haystack[i]);
+            }*/
+        }
+        
+        return searchedArray;
+    }
 
     handleChange = (e) => {
         this.setState({searchedHotelName: e.target.value});

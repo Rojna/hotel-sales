@@ -114,7 +114,7 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to Accor global sales",
+                    "subtitle": "Early access to Accor hotel sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -127,7 +127,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales two days in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor hotel sales. Not only will you access the Accor Super and Private sales two days in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
@@ -1532,12 +1532,12 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to Accor global sales",
+                    "subtitle": "Early access to Accor hotel sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor hotel sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
@@ -2933,7 +2933,7 @@
                 {
                     "hid": "benefit2",
                     "cid": "benefitc2",
-                    "subtitle": "Exclusive Members' Rate at 10% off the best available room ratey",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2987,7 +2987,7 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to Accor global sales",
+                    "subtitle": "Early access to Accor hotel sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2996,7 +2996,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor hotel sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
