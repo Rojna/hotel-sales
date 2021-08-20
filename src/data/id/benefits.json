@@ -2445,11 +2445,11 @@
                     "cid": "benefitc10",
                     "subtitle": "MEMBERSHIP PRICE PER YEAR",
                     "traveller": {
-                        "content": "$298",
+                        "content": "SGD 298",
                         "image": ""
                     },
                     "explorer": {
-                        "content": "$408",
+                        "content": "SGD 408",
                         "image": ""
                     },
                     "description": "Choose your membership type and click the join now button to sign up today.",
