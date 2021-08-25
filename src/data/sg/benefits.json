@@ -293,7 +293,7 @@
                 {
                     "hid": "benefit2",
                     "cid": "benefitc2",
-                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -306,7 +306,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor All app and book your next trip on your Members' Rate.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-cn/benefits/more-nights",
                         "text":"Learn more"
@@ -315,7 +315,7 @@
                 {
                     "hid": "benefit3",
                     "cid": "benefitc3",
-                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "subtitle": "Enjoy savings of up to 50% on room rates with Red Hot Room offers",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -328,7 +328,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-cn/benefits/more-nights",
                         "text":"Learn more"
@@ -359,7 +359,7 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to global Accor promotions",
+                    "subtitle": "Early access to Accor global sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -372,13 +372,13 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
                     "hid": "benefit6",
                     "cid": "benefitc6",
-                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "subtitle": "Up to 50% off dining across Asia Pacific",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -400,7 +400,7 @@
                 {
                     "hid": "benefit7",
                     "cid": "benefitc7",
-                    "subtitle": "15% off your drinks bill in Asia",
+                    "subtitle": "15% off drinks in Asia",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -413,7 +413,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-cn/benefits/more-flavours",
                         "text":"Learn more"
@@ -422,7 +422,7 @@
                 {
                     "hid": "benefit8",
                     "cid": "benefitc8",
-                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "subtitle": "Member exclusive events and experiences",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -525,7 +525,7 @@
                 {
                     "hid": "benefit2",
                     "cid": "benefitc2",
-                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -534,7 +534,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor All app and book your next trip on your Members' Rate.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-fj/benefits/more-night",
                         "text":"Learn more"
@@ -561,7 +561,7 @@
                 {
                     "hid": "benefit4",
                     "cid": "benefitc4",
-                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "subtitle": "Enjoy savings of up to 50% on room rates with Red Hot Room offers",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -570,7 +570,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-fj/benefits/more-night",
                         "text":"Learn more"
@@ -579,7 +579,7 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to global Accor promotions",
+                    "subtitle": "Early access to Accor global sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -588,13 +588,13 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
                     "hid": "benefit6",
                     "cid": "benefitc6",
-                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "subtitle": "Up to 50% off dining across Asia Pacific",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -612,7 +612,7 @@
                 {
                     "hid": "benefit7",
                     "cid": "benefitc7",
-                    "subtitle": "15% off your drinks bill in Asia",
+                    "subtitle": "15% off drinks in Asia",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -621,7 +621,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-fj/benefits/more-flavours",
                         "text":"Learn more"
@@ -630,7 +630,7 @@
                 {
                     "hid": "benefit8",
                     "cid": "benefitc8",
-                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "subtitle": "Member exclusive events and experiences",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -730,7 +730,7 @@
                 {
                     "hid": "benefit2",
                     "cid": "benefitc2",
-                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -743,7 +743,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor All app and book your next trip on your Members' Rate.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-hk/benefits/more-nights",
                         "text":"Learn more"
@@ -752,7 +752,7 @@
                 {
                     "hid": "benefit3",
                     "cid": "benefitc3",
-                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "subtitle": "Enjoy savings of up to 50% on room rates with Red Hot Room offers",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -765,7 +765,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-hk/benefits/more-nights",
                         "text":"Learn more"
@@ -796,7 +796,7 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to global Accor promotions",
+                    "subtitle": "Early access to Accor global sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -809,13 +809,13 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
                     "hid": "benefit6",
                     "cid": "benefitc6",
-                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "subtitle": "Up to 50% off dining across Asia Pacific",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -837,7 +837,7 @@
                 {
                     "hid": "benefit7",
                     "cid": "benefitc7",
-                    "subtitle": "15% off your drinks bill in Asia",
+                    "subtitle": "15% off drinks in Asia",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -850,7 +850,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-hk/benefits/more-flavours",
                         "text":"Learn more"
@@ -859,7 +859,7 @@
                 {
                     "hid": "benefit8",
                     "cid": "benefitc8",
-                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "subtitle": "Member exclusive events and experiences",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -961,7 +961,7 @@
                 {
                     "hid": "benefit2",
                     "cid": "benefitc2",
-                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -970,7 +970,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor All app and book your next trip on your Members' Rate.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-in/benefits/more-night",
                         "text":"Learn more"
@@ -979,7 +979,7 @@
                 {
                     "hid": "benefit3",
                     "cid": "benefitc3",
-                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "subtitle": "Enjoy savings of up to 50% on room rates with Red Hot Room offers",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -988,7 +988,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-in/benefits/more-night",
                         "text":"Learn more"
@@ -1015,7 +1015,7 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to global Accor promotions",
+                    "subtitle": "Early access to Accor global sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1024,13 +1024,13 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
                     "hid": "benefit6",
                     "cid": "benefitc6",
-                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "subtitle": "Up to 50% off dining across Asia Pacific",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1048,7 +1048,7 @@
                 {
                     "hid": "benefit7",
                     "cid": "benefitc7",
-                    "subtitle": "15% off your drinks bill in Asia",
+                    "subtitle": "15% off drinks in Asia",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1057,7 +1057,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-in/benefits/more-flavours",
                         "text":"Learn more"
@@ -1066,7 +1066,7 @@
                 {
                     "hid": "benefit8",
                     "cid": "benefitc8",
-                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "subtitle": "Member exclusive events and experiences",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1305,7 +1305,7 @@
                 {
                     "hid": "benefit2",
                     "cid": "benefitc2",
-                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1314,7 +1314,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor All app and book your next trip on your Members' Rate.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/zh-mo/benefits/more-nights",
                         "text":"Learn more"
@@ -1323,7 +1323,7 @@
                 {
                     "hid": "benefit3",
                     "cid": "benefitc3",
-                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "subtitle": "Enjoy savings of up to 50% on room rates with Red Hot Room offers",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1332,7 +1332,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/zh-mo/benefits/more-nights",
                         "text":"Learn more"
@@ -1359,7 +1359,7 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to global Accor promotions",
+                    "subtitle": "Early access to Accor global sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1368,13 +1368,13 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
                     "hid": "benefit6",
                     "cid": "benefitc6",
-                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "subtitle": "Up to 50% off dining across Asia Pacific",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1392,7 +1392,7 @@
                 {
                     "hid": "benefit7",
                     "cid": "benefitc7",
-                    "subtitle": "15% off your drinks bill in Asia",
+                    "subtitle": "15% off drinks in Asia",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1401,7 +1401,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/zh-mo/benefits/more-flavours",
                         "text":"Learn more"
@@ -1410,7 +1410,7 @@
                 {
                     "hid": "benefit8",
                     "cid": "benefitc8",
-                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "subtitle": "Member exclusive events and experiences",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1659,7 +1659,7 @@
                 {
                     "hid": "benefit2",
                     "cid": "benefitc2",
-                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1672,7 +1672,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor All app and book your next trip on your Members' Rate.",
                     "learnmore":  {
                         "link":"https://www.accorplus.com/en-nz/benefits/more-nights",
                         "text":"Learn more"
@@ -1703,7 +1703,7 @@
                 {
                     "hid": "benefit4",
                     "cid": "benefitc4",
-                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "subtitle": "Enjoy savings of up to 50% on room rates with Red Hot Room offers",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1716,7 +1716,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-nz/benefits/more-nights",
                         "text":"Learn more"
@@ -1725,7 +1725,7 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to global Accor promotions",
+                    "subtitle": "Early access to Accor global sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1738,13 +1738,13 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
                     "hid": "benefit6",
                     "cid": "benefitc6",
-                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "subtitle": "Up to 50% off dining across Asia Pacific",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1766,7 +1766,7 @@
                 {
                     "hid": "benefit7",
                     "cid": "benefitc7",
-                    "subtitle": "15% off your drinks bill in Asia",
+                    "subtitle": "15% off drinks in Asia",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1779,7 +1779,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-nz/benefits/more-flavours",
                         "text":"Learn more"
@@ -1788,7 +1788,7 @@
                 {
                     "hid": "benefit8",
                     "cid": "benefitc8",
-                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "subtitle": "Member exclusive events and experiences",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1912,7 +1912,7 @@
                 {
                     "hid": "benefit2",
                     "cid": "benefitc2",
-                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1921,7 +1921,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor All app and book your next trip on your Members' Rate.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-ph/benefits/more-nights",
                         "text":"Learn more"
@@ -1930,7 +1930,7 @@
                 {
                     "hid": "benefit3",
                     "cid": "benefitc3",
-                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "subtitle": "Enjoy savings of up to 50% on room rates with Red Hot Room offers",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1939,7 +1939,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-ph/benefits/more-nights",
                         "text":"Learn more"
@@ -1966,7 +1966,7 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to global Accor promotions",
+                    "subtitle": "Early access to Accor global sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1975,13 +1975,13 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
                     "hid": "benefit6",
                     "cid": "benefitc6",
-                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "subtitle": "Up to 50% off dining across Asia Pacific",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -1999,7 +1999,7 @@
                 {
                     "hid": "benefit7",
                     "cid": "benefitc7",
-                    "subtitle": "15% off your drinks bill in Asia",
+                    "subtitle": "15% off drinks in Asia",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2008,7 +2008,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-ph/benefits/more-flavours",
                         "text":"Learn more"
@@ -2017,7 +2017,7 @@
                 {
                     "hid": "benefit8",
                     "cid": "benefitc8",
-                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "subtitle": "Member exclusive events and experiences",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2107,7 +2107,7 @@
                 {
                     "hid": "benefit2",
                     "cid": "benefitc2",
-                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2116,7 +2116,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor All app and book your next trip on your Members' Rate.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en/benefits/more-nights",
                         "text":"Learn more"
@@ -2143,7 +2143,7 @@
                 {
                     "hid": "benefit4",
                     "cid": "benefitc4",
-                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "subtitle": "Enjoy savings of up to 50% on room rates with Red Hot Room offers",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2152,7 +2152,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en/benefits/more-nights",
                         "text":"Learn more"
@@ -2161,7 +2161,7 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to global Accor promotions",
+                    "subtitle": "Early access to Accor global sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2170,13 +2170,13 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
                     "hid": "benefit6",
                     "cid": "benefitc6",
-                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "subtitle": "Up to 50% off dining across Asia Pacific",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2194,7 +2194,7 @@
                 {
                     "hid": "benefit7",
                     "cid": "benefitc7",
-                    "subtitle": "15% off your drinks bill in Asia",
+                    "subtitle": "15% off drinks in Asia",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2203,7 +2203,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en/benefits/more-flavours",
                         "text":"Learn more"
@@ -2212,7 +2212,7 @@
                 {
                     "hid": "benefit8",
                     "cid": "benefitc8",
-                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "subtitle": "Member exclusive events and experiences",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2302,7 +2302,7 @@
                 {
                     "hid": "benefit2",
                     "cid": "benefitc2",
-                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2311,7 +2311,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor All app and book your next trip on your Members' Rate.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/sg/benefits/more-nights",
                         "text":"Learn more"
@@ -2320,7 +2320,7 @@
                 {
                     "hid": "benefit3",
                     "cid": "benefitc3",
-                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "subtitle": "Enjoy savings of up to 50% on room rates with Red Hot Room offers",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2329,7 +2329,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/sg/benefits/more-nights",
                         "text":"Learn more"
@@ -2356,7 +2356,7 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to global Accor promotions",
+                    "subtitle": "Early access to Accor global sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2365,13 +2365,13 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
                     "hid": "benefit6",
                     "cid": "benefitc6",
-                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "subtitle": "Up to 50% off dining across Asia Pacific",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2389,7 +2389,7 @@
                 {
                     "hid": "benefit7",
                     "cid": "benefitc7",
-                    "subtitle": "15% off your drinks bill in Asia",
+                    "subtitle": "15% off drinks in Asia",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2398,7 +2398,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/sg/benefits/more-flavours",
                         "text":"Learn more"
@@ -2407,7 +2407,7 @@
                 {
                     "hid": "benefit8",
                     "cid": "benefitc8",
-                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "subtitle": "Member exclusive events and experiences",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2497,7 +2497,7 @@
                 {
                     "hid": "benefit2",
                     "cid": "benefitc2",
-                    "subtitle": "Exclusive Members' Rate of 10% off the best available public room rate",
+                    "subtitle": "Exclusive Members' Rate at 10% off the best available room rate",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2506,7 +2506,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor App and book your next trip on your Members' Rate.",
+                    "description": "Enjoy more nights for less by accessing your exclusive Accor Plus Members' Rate all year round. Check out the hotel list or the Accor All app and book your next trip on your Members' Rate.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-tw/benefits/more-nights",
                         "text":"Learn more"
@@ -2533,7 +2533,7 @@
                 {
                     "hid": "benefit4",
                     "cid": "benefitc4",
-                    "subtitle": "Access to Red Hot Rooms where discounts can be up to 50% off",
+                    "subtitle": "Enjoy savings of up to 50% on room rates with Red Hot Room offers",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2542,7 +2542,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Save up to 50% on your hotel or resort accommodation with our Red Hot Room offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings on a wide selection of Accor hotels.",
+                    "description": "Save up to 50% on your stays with our room only offers. Exclusive to Accor Plus members, Red Hot Rooms offer great savings at participating Accor hotels and resorts across Asia Pacific.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-tw/benefits/more-nights",
                         "text":"Learn more"
@@ -2551,7 +2551,7 @@
                 {
                     "hid": "benefit5",
                     "cid": "benefitc5",
-                    "subtitle": "Early access to global Accor promotions",
+                    "subtitle": "Early access to Accor global sales",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2560,13 +2560,13 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "In addition, your Accor Plus membership gives you early access to Accor Global Sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
+                    "description": "In addition, your Accor Plus membership gives you early access to Accor global sales. Not only will you access the Accor Super and Private sales one day in advance, you will also enjoy an additional 10% off the promotion rate.",
                     "learnmore": ""
                 },
                 {
                     "hid": "benefit6",
                     "cid": "benefitc6",
-                    "subtitle": "Up to 50% off dining across 1,400 restaurants in Asia Pacific",
+                    "subtitle": "Up to 50% off dining across Asia Pacific",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2584,7 +2584,7 @@
                 {
                     "hid": "benefit7",
                     "cid": "benefitc7",
-                    "subtitle": "15% off your drinks bill in Asia",
+                    "subtitle": "15% off drinks in Asia",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
@@ -2593,7 +2593,7 @@
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"
                     },
-                    "description": "Your Accor Plus membership brings you 15% off drinks in Asia.",
+                    "description": "Enjoy 15% off your drinks bill at participating Accor hotel restaurants and bars across Asia.",
                     "learnmore": {
                         "link":"https://www.accorplus.com/en-tw/benefits/more-flavours",
                         "text":"Learn more"
@@ -2602,7 +2602,7 @@
                 {
                     "hid": "benefit8",
                     "cid": "benefitc8",
-                    "subtitle": "Member exclusive experiences such as cooking with celebrity chefs",
+                    "subtitle": "Member exclusive events and experiences",
                     "traveller": {
                         "content": false,
                         "image": "/images/open-iconic/png/check-8x.png"

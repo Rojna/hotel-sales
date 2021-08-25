@@ -156,12 +156,14 @@ class LeaderBoard extends Component {
                 localStorage.setItem(hotelCode,JSON.stringify(data))
             }   
         }else{
-            let data={
-                'countryRank':result.countryRank['rank'],
-                'globalRank':result.globalRank['rank'],
-                'sales': result.sales['total'],
-                'timestamp':currentTime}
-            localStorage.setItem(hotelCode,JSON.stringify(data));
+            if(result.countryRank['rank'] && result.globalRank['rank'] &&  result.sales['total']){
+                let data={
+                    'countryRank':result.countryRank['rank'],
+                    'globalRank':result.globalRank['rank'],
+                    'sales': result.sales['total'],
+                    'timestamp':currentTime}
+                localStorage.setItem(hotelCode,JSON.stringify(data));
+            }
         }
     }
 
@@ -687,19 +689,19 @@ class LeaderBoard extends Component {
                                     <div className = "row mt-4">
                                     {dashboardData && !_.isEmpty(dashboardData) &&(
                                         <React.Fragment>
-                                            <div className="col-md-8">
+                                            {/* <div className="col-md-8">
                                             </div>
                                             <div className="col-12 col-md-4 mb-3">
                                                 <select className="form-control" onChange={this.handleTypeChange}>
                                                     <option value= "monthly" selected={activeDropDown === 'monthly' ? true : false}>This Month</option>
                                                     <option value="weekly" selected={activeDropDown === 'weekly' ? true : false}>This Week</option>
                                                 </select>
-                                            </div>
+                                            </div> */}
                                             <div class="col-4">
                                                 <div class="card rankingTile">
                                                     <div class="card-body text-center">
                                                         <h6 class="font-weight-bolder text-dark">Sales</h6>
-                                                        <h1 class="d-inline"> {dashboardData.sales['total'] ?? 'N/A'}</h1>
+                                                        <h1 class="d-inline"> {dashboardData.sales['total'] ?? 0 }</h1>
                                                         {rank && rank.sales !== 0 &&  (
                                                             <React.Fragment>
                                                                 {rank.salesUp && (
@@ -722,7 +724,7 @@ class LeaderBoard extends Component {
                                             <div class="col-4">
                                                 <div class="card rankingTile">
                                                     <div class="card-body text-center">
-                                                        <h6 class="font-weight-bolder text-dark">Country Rank</h6>
+                                                        <h6 class="font-weight-bolder text-dark">{countryName ?? 'Country'} Rank</h6>
                                                         <h1 class="d-inline">{dashboardData.countryRank['rank'] !== '' ? dashboardData.countryRank['rank'] : 'N/A'} </h1>
                                                         {rank && rank.countryRank !== 0 && (
                                                             <React.Fragment>
@@ -1010,7 +1012,7 @@ class LeaderBoard extends Component {
                                                     </Accordion.Collapse>
                                                 </Card> 
                                             )}
-                                            {!countryResult.includes(hotelCode) && (
+                                            {!countryResult.includes(hotelCode) && dashboardData.countryRank && (
                                                 <Card key={dashboardData.countryRank['rank']} className='leaderboardTable-body active'>
                                                 <Accordion.Toggle as={Card.Header} eventKey={dashboardData.countryRank['rank']}>
                                                     <div className="d-flex">
