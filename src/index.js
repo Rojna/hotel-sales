@@ -19,7 +19,7 @@ class App extends React.Component {
         languages : [],
         loading   : true
       }
-      if(this.state.languages.length == 0){
+      if(this.state.languages.length === 0){
         this.getLanguages();
       }
       this.createRoute = this.createRoute.bind(this);

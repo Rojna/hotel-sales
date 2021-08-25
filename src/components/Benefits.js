@@ -54,7 +54,7 @@ class Benefits extends React.Component  {
                                     <div className="col-12 col-md-6">
                                         <div>{item.description}</div>
                                         <div>{item.learnmore && (
-                                            <a target='_blank' href={item.learnmore.link}>{item.learnmore.text}</a>
+                                            <a target='_blank' rel="noreferrer" href={item.learnmore.link}>{item.learnmore.text}</a>
                                         )}
                                         </div>
                                     </div>

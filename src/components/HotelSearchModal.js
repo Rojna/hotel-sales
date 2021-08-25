@@ -38,12 +38,12 @@ class HotelSearchModal extends Component {
         for(var i=0;i<haystack.length;i++) {
             var found = [];
             for(var j=0;j<needles.length;j++){
-                if(haystack[i].HotelName.toLowerCase().indexOf(needles[j]) != -1) {
+                if(haystack[i].HotelName.toLowerCase().indexOf(needles[j]) !== -1) {
                     found.push(true);
                 }
             }
             
-            if(found.length == needles.length) {
+            if(found.length === needles.length) {
                 searchedArray.push(haystack[i]);
             }
             //search one string
@@ -121,7 +121,7 @@ class HotelSearchModal extends Component {
                         </div>
                     )}
 
-                    {showResults && searchResults.length == 0 &&(
+                    {showResults && searchResults.length === 0 &&(
                          <div className="row mt-2">
                             <div className="col-12">
                                 <h4>No Results</h4>

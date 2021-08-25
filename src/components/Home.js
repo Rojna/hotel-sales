@@ -3,10 +3,9 @@ import axios from 'axios';
 import Header from './Header';
 import Welcome from './Welcome';
 import HotelSearchModal from './HotelSearchModal';
-import LoadingScreen from './common/loading-screen';
 import Benefits from './Benefits.js';
 
-import { HOTELSEARCH_CODEURL, COUNTRYCODES, DOMAINS, MAP_COUNTRYCODES, MAP_COUNTRYLOGO} from './../constants/index';
+import { HOTELSEARCH_CODEURL, COUNTRYCODES, DOMAINS, MAP_COUNTRYCODES} from './../constants/index';
 import { getCountry, setBenefits, setLanguage } from './helper';
 
 import auData from '../data/benefits.json';
@@ -14,10 +13,10 @@ import idData from '../data/id/benefits.json';
 import myData from '../data/my/benefits.json';
 import thData from '../data/th/benefits.json';
 import vnData from '../data/vn/benefits.json';
+import sgData from '../data/sg/benefits.json';
 
 import languages from '../data/language-test.json';
 import '../css/style.css';
-import { templateSettings } from 'lodash';
 
 class Home extends Component {
     constructor(props) {
@@ -55,8 +54,6 @@ class Home extends Component {
     }
         
     componentDidMount = () => {
-        const {hotelCode , hotelName, benefitResults, language} =this.state;
-        const { history } = this.props;
         if(localStorage.getItem('hotelData')){
             const hotelData = JSON.parse(localStorage.getItem('hotelData'));
             this.setState({
@@ -98,6 +95,9 @@ class Home extends Component {
                 break;   
             case 'vn':
                 benefitsData = vnData;
+                break;
+            case 'sg':
+                benefitsData = sgData;
                 break;   
             default:
                 benefitsData = auData;
@@ -139,8 +139,8 @@ class Home extends Component {
     };
 
     handleNext = () => {
-        const {hotelCode , hotelName, benefitResults, language, showLeaderBoard, hotelSearch, hotelSearchResults} =this.state;
-        const url = (this.state.region == 'au' ? '': '/'+this.state.region);
+        const {hotelCode , hotelName, benefitResults, language, showLeaderBoard, hotelSearch} =this.state;
+        const url = (this.state.region === 'au' ? '': '/'+this.state.region);
         if(hotelCode && hotelSearch && localStorage.getItem('hotelData')){
             this.props.history.push(url+'/employee-details', { 
                 hotelCode         : hotelCode, 
@@ -181,9 +181,8 @@ class Home extends Component {
         const {hotelSearch, hotelSearchResults, hotelName, hotelCode, show, benefitResults, showError, language, showLeaderBoard, region} = this.state;
         let translateLanguage = [];
         if(localStorage.getItem('languages')){
-            const index=0;
             const domains = JSON.parse(localStorage.getItem('languages'));
-            Object.entries(domains).map(([key, i]) => {
+            Object.entries(domains).map(([key]) => {
                  const test={};
                  test[0] = key;
                  test[1] = key === "au" ? "English" : MAP_COUNTRYCODES[key.toUpperCase()];

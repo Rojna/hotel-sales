@@ -174,3 +174,8 @@ button.btn-secondary:hover, .btn-secondary:not(:disabled):not(.disabled).active,
     background-color: #F2f2f2CC;
     z-index: 2000;
 }
+
+.section-loading {
+    position: relative;
+    min-height: 250px;
+}

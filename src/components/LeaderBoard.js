@@ -9,17 +9,17 @@ import LoadingScreen from './common/loading-screen'
 import { Accordion, Card } from "react-bootstrap";
 
 import Header from './Header';
-import ErrorMessage from './common/errorMessage';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faSearch, faHotel, faIdCardAlt, faListOl,faSquare, faExclamation, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faSearch, faListOl,faSquare, faExclamation, faChevronRight, faCartArrowDown, faSortUp, faSortDown } from '@fortawesome/free-solid-svg-icons'
 import { Tabs, Tab } from "react-bootstrap";
 import _ from 'lodash';
 
-import { VENDORAPI, MAP_COUNTRYCODES, GLOBALAPIHEADER } from './../constants/index';
+import {MAP_COUNTRYCODES, GLOBALAPIHEADER } from './../constants/index';
 
 import '../css/style.css';
 import '../css/leaderboard.css';
+import reactDom from 'react-dom';
 
 var today = new Date();
 var firstDateOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
@@ -59,7 +59,7 @@ class LeaderBoard extends Component {
             fetchingGlobalData  : false,
             employeePage        : 1,
             countryPage         : 1,
-            globalPage          : 1   
+            globalPage          : 1
         };
 
     }
@@ -72,7 +72,7 @@ class LeaderBoard extends Component {
         if(sessionStorage.getItem('hotelDetails')){
             const rid_code = JSON.parse(sessionStorage.getItem('hotelDetails')).rid_code;
             const hotelCode = JSON.parse(localStorage.getItem('hotelData')).HotelCode;
-            if( rid_code != hotelCode){
+            if( rid_code !== hotelCode){
                 sessionStorage.removeItem('hotelDetails');
                 sessionStorage.removeItem('dashboardData');
                 sessionStorage.removeItem('employeeData');
@@ -93,12 +93,13 @@ class LeaderBoard extends Component {
 
         if(sessionStorage.getItem('dashboardData')){
             this.setState({
-                dashboardData : JSON.parse(sessionStorage.getItem('dashboardData'),),
+                dashboardData : JSON.parse(sessionStorage.getItem('dashboardData')),
                 fetchingDashboardData : false
             });
+            this.getRankingTiles(JSON.parse(sessionStorage.getItem('dashboardData')));
         }else{
             fetchDashboard = this.getDashboardData(activeDropDown);
-        }
+        }           
 
         if(sessionStorage.getItem('employeeData')){
             this.setState({
@@ -113,6 +114,7 @@ class LeaderBoard extends Component {
                 globalData : JSON.parse(sessionStorage.getItem('globalData')),
                 global: JSON.parse(sessionStorage.getItem('global'))
             });
+            this.filterCountries(JSON.parse(sessionStorage.getItem('globalData')));
         }else{
             fetchGlobal = this.getGlobalData(startDate, endDate);
         }
@@ -131,14 +133,46 @@ class LeaderBoard extends Component {
         });
     }
 
+    getRankingTiles(result){
+        const {hotelCode} = this.props.location.state;
+        var currentTime=Math.floor(Date.now()/1000);
+        if(localStorage.getItem(hotelCode)){
+            var localData = JSON.parse(localStorage.getItem(hotelCode));
+            if(currentTime > localData.timestamp) {
+                var rank={
+                    'countryRank'   : result.countryRank['rank'] ? localData.countryRank - result.countryRank['rank'] : 0,
+                    'countryRankUp' : result.countryRank['rank'] < localData.countryRank ? true : false,
+                    'globalRank'    : result.globalRank['rank'] ? localData.globalRank - result.globalRank['rank'] : 0,
+                    'globalRankUp'  : result.globalRank['rank'] < localData.globalRank ? true : false,
+                    'sales'         : result.sales['total'] ? localData.sales - result.sales['total'] : 0,
+                    'salesUp'       : result.sales['total'] < localData.sales ? true : false
+                };
+                this.setState({ rank : rank});
+                let data={
+                    'countryRank':result.countryRank['rank'],
+                    'globalRank':result.globalRank['rank'],
+                    'sales': result.sales['total'],
+                    'timestamp':currentTime}
+                localStorage.setItem(hotelCode,JSON.stringify(data))
+            }   
+        }else{
+            let data={
+                'countryRank':result.countryRank['rank'],
+                'globalRank':result.globalRank['rank'],
+                'sales': result.sales['total'],
+                'timestamp':currentTime}
+            localStorage.setItem(hotelCode,JSON.stringify(data));
+        }
+    }
+
     getUrl=()=>{ 
         var urlPath = window.location.href;
-        if(urlPath.indexOf("localhost") != -1) {
+        if(urlPath.indexOf("localhost") !== -1) {
             return {
                 // apiURL : "https://api-uat.accorplus.com/v1/"
                 apiURL : "https://int-api.accorplus.com/v1/"
             };
-        } else if(window.location.host.indexOf("dev-hotelsales") != -1) {
+        } else if(window.location.host.indexOf("dev-hotelsales") !== -1) {
             return {
                 // apiURL : "https://api-uat.accorplus.com/v1/"
                 apiURL : "https://int-api.accorplus.com/v1/"
@@ -158,7 +192,7 @@ class LeaderBoard extends Component {
         this.getDashboardData(type);
     }
 
-    getDashboardData = async (type) => {
+    getDashboardData = async (type, search=false) => {
         const {startDate, endDate} = this.state;
         const {hotelCode} = this.props.location.state;
         let start = moment(startDate).format("DD/MM/YYYY");
@@ -184,6 +218,9 @@ class LeaderBoard extends Component {
                             dashboardData : result,
                             fetchingDashboardData : false});
                             sessionStorage.setItem('dashboardData',JSON.stringify(result));
+                        if(!search){
+                            this.getRankingTiles(result);
+                        }
                     }
                 } else throw new Error('Oops, something went wrong');
             }).catch(error => {
@@ -224,7 +261,7 @@ class LeaderBoard extends Component {
         }
         
         let index = 1;
-        if(page != "1"){
+        if(page !== "1"){
             index = ((page - 1) * 10) + 1;
             this.setState({fetchingEmployeeData : true});
         }
@@ -238,7 +275,7 @@ class LeaderBoard extends Component {
                                 fetchingEmployeeData : false,
                                 employeeEndOfList : true});
                         } else if(response.data.employees['0'].length > 0) {
-                            let oldEmployeeData = (page == 1 ? [] : this.state.data);
+                            let oldEmployeeData = (page === 1 ? [] : this.state.data);
                             var sortedData = _.orderBy(response.data.employees['0'], ['unitsSold'],['desc']);
                             for(let i = 0; i < sortedData.length; i++){
                                 let newData = sortedData[i];
@@ -276,7 +313,7 @@ class LeaderBoard extends Component {
         }
         
         let index = 1;
-        if(page != "1"){
+        if(page !== "1"){
             index = ((page - 1) * 10) + 1;
             this.setState({fetchingCountryData : true});
         }
@@ -309,7 +346,6 @@ class LeaderBoard extends Component {
                                 sessionStorage.setItem('countryData',JSON.stringify(oldCountryData));
                                 sessionStorage.setItem('country',JSON.stringify(oldCountryData));
                             }
-                            this.filterCountries(this.state.globalData);
                         }
                     }
                 } else throw new Error('Oops, something went wrong');
@@ -342,7 +378,7 @@ class LeaderBoard extends Component {
         }
         
         let index = 1;
-        if(page != "1"){
+        if(page !== "1"){
             index = ((page - 1) * 10) + 1;
             this.setState({fetchingGlobalData : true});
         }
@@ -353,7 +389,7 @@ class LeaderBoard extends Component {
                         this.setState({globalEndOfList : true,
                             fetchingGlobalData : false});
                     } else if(response.data.length > 0) {
-                        let previousData = (page == 1 ? [] : this.state.global);
+                        let previousData = (page === 1 ? [] : this.state.global);
                         let globalData = [];
                         Object.entries(response.data).map((key, i) => {
                             const data = key[1];
@@ -374,6 +410,7 @@ class LeaderBoard extends Component {
                             sessionStorage.setItem('globalData',JSON.stringify(previousData));
                         }
                     }
+                    this.filterCountries(this.state.globalData);
                 } else throw new Error('Oops, something went wrong');
             }).catch(error => {
                 console.log('error', error) 
@@ -487,7 +524,7 @@ class LeaderBoard extends Component {
     handleClick = (e) => {
         e.preventDefault();
         console.log("Clicked Search");
-        const {startDate, endDate, activeTab} = this.state;
+        const {startDate, endDate} = this.state;
         const {hotelCode} = this.props.location.state;
         this.setState({
             fetchingData : true,
@@ -510,7 +547,7 @@ class LeaderBoard extends Component {
         sessionStorage.setItem('global',JSON.stringify([]));
         sessionStorage.setItem('globalData',JSON.stringify([]));
 
-        const fetchDashBoard = this.getDashboardData();
+        const fetchDashBoard = this.getDashboardData(null,true);
         const fetchEmployee = this.getEmployeeData(startDate, endDate, hotelCode);
         const fetchCountry = this.getCountryData(startDate, endDate);
         const fetchGlobal = this.getGlobalData(startDate, endDate);
@@ -535,21 +572,26 @@ class LeaderBoard extends Component {
 
     getMembershipBreakdown = (data) =>{
         let unique = [];
-        {data.membershipBreakdown && Object.entries(data.membershipBreakdown).forEach(([key, value]) => {
-           unique.push(key);
-        })}
+        if(data.membershipBreakdown){
+            Object.entries(data.membershipBreakdown).forEach(([key, value]) => {
+                unique.push(key);
+             });
+        }
         return unique;
     }
-    
+  
     render() {
         const {filteredData, employeeData, countryData, countryFilteredData, globalData, globalFilteredData, dashboardData, fetchingData} = this.state;
-        const {selected,showLeaderBoard, startDate, endDate, hotelDetails, filterCountry, fetchingDashboardData, activeDropDown, globalPage} = this.state;
-        const {fetchingEmployeeData, employeeEndOfList, fetchingCountryData, countryEndOfList, fetchingGlobalData, globalEndOfList} = this.state;
+        const {selected,showLeaderBoard, startDate, endDate, hotelDetails, filterCountry, fetchingDashboardData, activeDropDown} = this.state;
+        const {fetchingEmployeeData, employeeEndOfList, fetchingCountryData, countryEndOfList, fetchingGlobalData, globalEndOfList, rank} = this.state;
         const {hotelCode, hotelName, countryName} = this.props.location.state;
         
         const employeeDataMap = (filteredData.length > 0) ? filteredData : employeeData;
         const countryDataMap = (countryFilteredData.length > 0) ? countryFilteredData :countryData;
         const globalDataMap = (globalFilteredData.length > 0) ? globalFilteredData :globalData;
+
+        const countryResult =  _.map(countryDataMap, item => (item.rid_code));
+        const globalResult =  _.map(globalDataMap, item => (item.rid_code));
 
         const filterByCountry = filterCountry.map((item) =>
             <option value={item}>{item}</option>
@@ -628,7 +670,7 @@ class LeaderBoard extends Component {
                                             dateFormat="dd - MM - yyyy"/>
                                 </div>
                                 <div className="col-12 col-md-4 mb-2 mb-md-0">
-                                <button className="btn btn-primary btn-block" onClick={this.handleClick}>
+                                <button className="btn btn-sm btn-primary btn-block" onClick={this.handleClick}>
                                         <FontAwesomeIcon icon={faSearch} /> SEARCH
                                     </button>
                                 </div>
@@ -639,7 +681,7 @@ class LeaderBoard extends Component {
                         <Tabs defaultActiveKey="dashboard" id="uncontrolled-tab-example">
                             <Tab eventKey="dashboard" title="DASHBOARD">
                                 {fetchingDashboardData && (
-                                    <LoadingScreen/>
+                                    <LoadingScreen extraClass="section-loading"/>
                                 )}
                                 {!fetchingDashboardData && (
                                     <div className = "row mt-4">
@@ -653,7 +695,79 @@ class LeaderBoard extends Component {
                                                     <option value="weekly" selected={activeDropDown === 'weekly' ? true : false}>This Week</option>
                                                 </select>
                                             </div>
-                                            <div className="col-12 col-md-4">
+                                            <div class="col-4">
+                                                <div class="card rankingTile">
+                                                    <div class="card-body text-center">
+                                                        <h6 class="font-weight-bolder text-dark">Sales</h6>
+                                                        <h1 class="d-inline"> {dashboardData.sales['total'] ?? 'N/A'}</h1>
+                                                        {rank && rank.sales !== 0 &&  (
+                                                            <React.Fragment>
+                                                                {rank.salesUp && (
+                                                                    <span class="text-success font-weight-bold">
+                                                                    <FontAwesomeIcon icon={faSortUp}/>
+                                                                    {rank.sales}
+                                                                </span>
+                                                                )}
+                                                                {!rank.salesUp &&  (
+                                                                     <span class="text-danger font-weight-bold">
+                                                                     <FontAwesomeIcon icon={faSortDown}/>
+                                                                     {rank.sales}
+                                                                 </span>
+                                                                )}
+                                                            </React.Fragment>
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="card rankingTile">
+                                                    <div class="card-body text-center">
+                                                        <h6 class="font-weight-bolder text-dark">Country Rank</h6>
+                                                        <h1 class="d-inline">{dashboardData.countryRank['rank'] !== '' ? dashboardData.countryRank['rank'] : 'N/A'} </h1>
+                                                        {rank && rank.countryRank !== 0 && (
+                                                            <React.Fragment>
+                                                                {rank.countryRankUp &&(
+                                                                    <span class="text-success font-weight-bold">
+                                                                        <FontAwesomeIcon icon={faSortUp}/>
+                                                                        {rank.countryRank}
+                                                                    </span>
+                                                                )}
+                                                                {!rank.countryRankUp && (
+                                                                     <span class="text-danger font-weight-bold">
+                                                                        <FontAwesomeIcon icon={faSortDown}/>
+                                                                        {rank.countryRank}
+                                                                    </span>
+                                                                )}
+                                                            </React.Fragment>
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="card rankingTile">
+                                                    <div class="card-body text-center">
+                                                        <h6 class="font-weight-bolder text-dark">Global Rank</h6>
+                                                        <h1 class="d-inline">{dashboardData.globalRank['rank'] !== '' ? dashboardData.globalRank['rank'] : 'N/A'} </h1>
+                                                        {rank && rank.globalRank !== 0 && (
+                                                            <React.Fragment>
+                                                                {rank.globalRankUp && (
+                                                                    <span class="text-success font-weight-bold">
+                                                                        <FontAwesomeIcon icon={faSortUp}/>
+                                                                        {rank.globalRank}
+                                                                    </span>
+                                                                )}
+                                                                    {!rank.globalRankUp && (
+                                                                     <span class="text-danger font-weight-bold">
+                                                                        <FontAwesomeIcon icon={faSortDown}/>
+                                                                        {rank.globalRank}
+                                                                    </span>
+                                                                )}
+                                                            </React.Fragment>
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <h3 class="card-title font-weight-bold d-block">{hotelCode} - Membership Breakdown</h3>
@@ -697,7 +811,7 @@ class LeaderBoard extends Component {
                                                 </div>
                                             </div>
                                             <div className="col-12 col-md-8">
-                                            <div class="card">
+                                                <div class="card">
                                                     <div class="card-header">
                                                         <h3 class="card-title font-weight-bold"><FontAwesomeIcon icon={faListOl}/> Top 5 Hotels in {countryName ?? 'your Country'}</h3>
                                                     </div>
@@ -724,7 +838,7 @@ class LeaderBoard extends Component {
                                                                                 {item.unitsSold}
                                                                             </div>
                                                                             <div className="mb-0 col-1">
-                                                                                <button className="btn btn-primary"><FontAwesomeIcon icon={faPlus}/></button>
+                                                                                <button className="btn btn-sm btn-primary"><FontAwesomeIcon icon={faPlus}/></button>
                                                                             </div>   
                                                                         </div>
                                                                     </Accordion.Toggle>
@@ -742,7 +856,7 @@ class LeaderBoard extends Component {
                                                                     </Accordion.Collapse>
                                                                 </Card>
                                                             )}
-                                                            {dashboardData.topHotels && dashboardData.topHotels.length == 0  && (
+                                                            {dashboardData.topHotels && dashboardData.topHotels.length === 0  && (
                                                                 <div className="font-weight-bold text-center mt-4">
                                                                     <p><FontAwesomeIcon icon={faExclamation}/> No Data Found! Contact your AccorPlus Ambassador</p>
                                                             </div> 
@@ -763,7 +877,7 @@ class LeaderBoard extends Component {
                             </Tab>
                             <Tab eventKey="hotel" title="HOTEL">
                                 {fetchingData && (
-                                    <LoadingScreen/>
+                                    <LoadingScreen extraClass="section-loading"/>
                                 )}
                                 {!fetchingData && employeeDataMap.length > 0 && (
                                     <React.Fragment>
@@ -794,14 +908,13 @@ class LeaderBoard extends Component {
                                                             </div>
                                                             <div className="mb-0 col-6">
                                                                 Heartist{item.index}
-                                                                {/* {item.salesRepId}
-                                                                {!item.salesRepId && <span className="font-weight-normal">Unknown Heartist</span>} */}
+                                                                {/* {item.salesRepId} */}
                                                             </div>
                                                             <div className="mb-0 col-3 text-center">
                                                                 {item.unitsSold}
                                                             </div>
                                                             <div className="mb-0 col-1">
-                                                                <button className="btn btn-primary"><FontAwesomeIcon icon={faPlus}/></button>
+                                                                <button className="btn btn-sm btn-primary"><FontAwesomeIcon icon={faPlus}/></button>
                                                             </div>   
                                                         </div>
                                                     </Accordion.Toggle>
@@ -827,7 +940,7 @@ class LeaderBoard extends Component {
                                         </div> 
                                     </React.Fragment>
                                 )}
-                                {employeeDataMap.length == 0 && (
+                                {!fetchingData && employeeDataMap.length === 0 && (
                                     <div className="font-weight-bold text-center mt-4">
                                         <p><FontAwesomeIcon icon={faExclamation}/> No Data Found! Contact your AccorPlus Ambassador</p>
                                     </div> 
@@ -835,7 +948,7 @@ class LeaderBoard extends Component {
                             </Tab>
                             <Tab eventKey="country" title={countryName ?? 'COUNTRY'} >
                                 {fetchingData && (
-                                    <LoadingScreen/>
+                                    <LoadingScreen extraClass="section-loading"/>
                                 )}
                                 {!fetchingData &&countryDataMap.length > 0 && (
                                     <React.Fragment>
@@ -879,7 +992,7 @@ class LeaderBoard extends Component {
                                                                 {item.unitsSold}
                                                             </div>
                                                             <div className="mb-0 col-1">
-                                                                <button className="btn btn-primary"><FontAwesomeIcon icon={faPlus}/></button>
+                                                                <button className="btn btn-sm btn-primary"><FontAwesomeIcon icon={faPlus}/></button>
                                                             </div>   
                                                         </div>
                                                     </Accordion.Toggle>
@@ -897,6 +1010,39 @@ class LeaderBoard extends Component {
                                                     </Accordion.Collapse>
                                                 </Card> 
                                             )}
+                                            {!countryResult.includes(hotelCode) && (
+                                                <Card key={dashboardData.countryRank['rank']} className='leaderboardTable-body active'>
+                                                <Accordion.Toggle as={Card.Header} eventKey={dashboardData.countryRank['rank']}>
+                                                    <div className="d-flex">
+                                                        <div className="mb-0 col-1 text-center font-weight-bold">
+                                                            {dashboardData.countryRank['rank'] !== '' ? dashboardData.countryRank['rank'] : 'N/A'}
+                                                        </div>
+                                                        <div className="mb-0 col-7">
+                                                            <p className="mb-1 font-weight-bold">{hotelDetails.vendorName}</p> 
+                                                            <p className="mb-0">RID {hotelCode}</p>
+                                                        </div>
+                                                        <div className="mb-0 col-3 text-center font-weight-bold">
+                                                            {dashboardData.sales['total'] ?? 'N/A'}
+                                                        </div>
+                                                        <div className="mb-0 col-1">
+                                                            <button className="btn btn-sm btn-primary"><FontAwesomeIcon icon={faPlus}/></button>
+                                                        </div>   
+                                                    </div>
+                                                </Accordion.Toggle>
+                                                <Accordion.Collapse eventKey={dashboardData.countryRank['rank']}>
+                                                    <Card.Body>
+                                                        <div className="row">
+                                                            <div className="col-1"></div>
+                                                            <div className="col-11">
+                                                                {this.getMembershipBreakdown(dashboardData).map((element) => 
+                                                                    <p className="mb-0">{element} : {dashboardData.membershipBreakdown[element]}</p>
+                                                                )}
+                                                            </div>
+                                                        </div>
+                                                    </Card.Body>
+                                                </Accordion.Collapse>
+                                            </Card> 
+                                            )}
                                         </Accordion>
                                         <div className="font-weight-bold text-center mt-4">
                                             {fetchingCountryData && <p>Loading ...</p>}
@@ -905,20 +1051,20 @@ class LeaderBoard extends Component {
                                         </div> 
                                     </React.Fragment>
                                 )}
-                                {countryDataMap.length == 0 && countryEndOfList && (
+                                {!fetchingData && countryDataMap.length === 0 && countryEndOfList && (
                                     <div className="font-weight-bold text-center mt-4">
                                         <p><FontAwesomeIcon icon={faExclamation}/> No Sales Found </p>
                                     </div> 
                                 )}
-                                {countryDataMap.length == 0 && !countryEndOfList && (
+                                {!fetchingData && countryDataMap.length === 0 && !countryEndOfList && (
                                     <div className="font-weight-bold text-center mt-4">
                                         <p><FontAwesomeIcon icon={faExclamation}/> No Data Found! Contact your AccorPlus Ambassador</p>
                                     </div>
                                 )}
                             </Tab>
                             <Tab eventKey="global" title="GLOBAL">
-                            {fetchingData && (
-                                    <LoadingScreen/>
+                                {fetchingData && (
+                                   <LoadingScreen extraClass="section-loading"/>
                                 )}
                                 {!fetchingData && globalDataMap.length > 0 && (
                                     <React.Fragment>
@@ -974,7 +1120,7 @@ class LeaderBoard extends Component {
                                                                 {item.unitsSold}
                                                             </div>
                                                             <div className="mb-0 col-1 font-weight-bold">
-                                                                <button className="btn btn-primary"><FontAwesomeIcon icon={faPlus}/></button>
+                                                                <button className="btn btn-sm btn-primary"><FontAwesomeIcon icon={faPlus}/></button>
                                                             </div>   
                                                         </div>
                                                     </Accordion.Toggle>
@@ -992,6 +1138,42 @@ class LeaderBoard extends Component {
                                                     </Accordion.Collapse>
                                                 </Card> 
                                             )}
+                                            {!globalResult.includes(hotelCode) && dashboardData && dashboardData.globalRank &&(
+                                                <Card key={dashboardData.globalRank['rank']} className='leaderboardTable-body active'>
+                                                <Accordion.Toggle as={Card.Header} eventKey={dashboardData.globalRank['rank']}>
+                                                    <div className="d-flex">
+                                                        <div className="mb-0 col-1 text-center font-weight-bold">
+                                                            {dashboardData.globalRank['rank'] !== '' ? dashboardData.globalRank['rank'] : 'N/A'}
+                                                        </div>
+                                                        <div className="mb-0 col-6">
+                                                            <p className="mb-1 font-weight-bold">{hotelDetails.vendorName}</p> 
+                                                            <p className="mb-0">RID {hotelCode}</p>
+                                                        </div>
+                                                        <div className="mb-0 col-2 font-weight-bold text-capitalize">
+                                                                {countryName.toLowerCase()}
+                                                            </div>
+                                                        <div className="mb-0 col-2 text-center font-weight-bold">
+                                                            {dashboardData.sales['total'] ?? 'N/A'}
+                                                        </div>
+                                                        <div className="mb-0 col-1">
+                                                            <button className="btn btn-sm btn-primary"><FontAwesomeIcon icon={faPlus}/></button>
+                                                        </div>   
+                                                    </div>
+                                                </Accordion.Toggle>
+                                                <Accordion.Collapse eventKey={dashboardData.globalRank['rank']}>
+                                                    <Card.Body>
+                                                        <div className="row">
+                                                            <div className="col-1"></div>
+                                                            <div className="col-11">
+                                                                {this.getMembershipBreakdown(dashboardData).map((element) => 
+                                                                    <p className="mb-0">{element} : {dashboardData.membershipBreakdown[element]}</p>
+                                                                )}
+                                                            </div>
+                                                        </div>
+                                                    </Card.Body>
+                                                </Accordion.Collapse>
+                                            </Card> 
+                                            )}
                                         </Accordion>
                                         <div className="font-weight-bold text-center mt-4">
                                             {fetchingGlobalData && <p>Loading ...</p>}
@@ -1001,7 +1183,7 @@ class LeaderBoard extends Component {
 
                                     </React.Fragment>
                                 )}
-                                {globalDataMap.length == 0 && !globalEndOfList && (
+                                {!fetchingData && globalDataMap.length === 0 && !globalEndOfList && (
                                         <div className="col-12 font-weight-bold text-center mt-2">
                                             <p><FontAwesomeIcon icon={faExclamation}/> No Data Found! Contact your AccorPlus Ambassador</p>
                                         </div>

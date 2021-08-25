@@ -1,12 +1,12 @@
 export const getUrl=()=>{ 
     var urlPath = window.location.href;
-    if(urlPath.indexOf("localhost") != -1) {
+    if(urlPath.indexOf("localhost") !== -1) {
         return {
             baseUrl : "",
             urlRoot : "https://accorstaging.wpstaging.io/",
             googleApiUrl: "https://script.google.com/macros/s/AKfycbxKQYwf3YcGvBwxeV4RTnlFN4j-Fjt37ngupqITDjjuu58wwBBd038719XOGjwHWueRVg/exec"
         };
-    } else if(window.location.host.indexOf("dev-hotelsales") != -1) {
+    } else if(window.location.host.indexOf("dev-hotelsales") !== -1) {
         return {
             baseUrl : "https://dev-hotelsales.accorplus.com",
             urlRoot : "https://accorstaging.wpstaging.io/",
@@ -72,15 +72,15 @@ export const setBenefits = (region, benefitsData) => {
 
         if(!found) {
             console.log("country not found");
-            for(var i = 0; i < benefitsData.length; i++) {
-                console.log("data", benefitsData[i]);
-                for(var key in benefitsData[i]) {
-                    console.log("key", key);
-                    if(key.indexOf("row") > -1) {
+            for(var a = 0; a < benefitsData.length; a++) {
+                console.log("data", benefitsData[a]);
+                for(var index in benefitsData[a]) {
+                    console.log("key", index);
+                    if(index.indexOf("row") > -1) {
                         found = true;
-                        console.log("country found 2 :: key", key);
-                        console.log("country found 2", benefitsData[i].row);
-                       return(benefitsData[i].row);
+                        console.log("country found 2 :: key", index);
+                        console.log("country found 2", benefitsData[a].row);
+                       return(benefitsData[a].row);
                     }
                 }
             }

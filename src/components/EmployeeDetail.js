@@ -5,14 +5,15 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import Header from './Header';
 import Benefits from './Benefits.js';
 
-import { getUrl, getFromSession } from './helper';
+import { getUrl } from './helper';
 import { 
     PRICELEVEL_DISCOUNT, 
     PRICELEVEL_DISCOUNT_NZ, 
     PRICELEVEL_DISCOUNT_TH,
     PRICELEVEL_DISCOUNT_VN,
     PRICELEVEL_DISCOUNT_MY,
-    PRICELEVEL_DISCOUNT_ID } from './../constants/index';
+    PRICELEVEL_DISCOUNT_ID,
+    PRICELEVEL_DISCOUNT_SG } from './../constants/index';
 
 class EmployeeDetail extends Component {
 
@@ -43,18 +44,20 @@ class EmployeeDetail extends Component {
         if(!staffName){
             this.setState({showError: true});
         }else{
-            if(countryCode == "AU") {
+            if(countryCode === "AU") {
                 priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT;
-            } else if(countryCode == "NZ") {
+            } else if(countryCode === "NZ") {
                 priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_NZ;
-            } else if(countryCode == "TH") {
+            } else if(countryCode === "TH") {
                 priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_TH;
-            } else if(countryCode == "VN") {
+            } else if(countryCode === "VN") {
                 priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_VN;
-            }  else if(countryCode == "MY") {
+            }  else if(countryCode === "MY") {
                 priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_MY;
-            } else if(countryCode == "ID") {
+            } else if(countryCode === "ID") {
                 priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_ID;
+            } else if(countryCode === "SG") {
+                priceLevel = "&pricelevel=" + PRICELEVEL_DISCOUNT_SG;
             }
 
             const url =  urlRoot + countryCode.toLowerCase() + "/registration?hotelRIDOnlineKiosk="+state.hotelCode+"&apHotelEmployeeName="+staffName+"&hotelEmployee="+staffName + priceLevel;

@@ -7,6 +7,17 @@ import logo from "../images/Accor-Plus-logo_2019.png";
 
 class Header extends React.Component  {
 
+    constructor(props) {
+        super(props);
+        this.handleLanguageChange   = this.handleLanguageChange.bind(this);
+    }
+
+    handleLanguageChange = (e) =>{
+        const selected = e.target.value;
+        const url = selected === "au" ? "/" : "/"+selected;
+        window.location.href = url;
+    }
+
     render() {
         const {hasGlobalMessage, showLeaderBoard, handleLeaderBoard, hideBanner, goBack} = this.props;
         return (

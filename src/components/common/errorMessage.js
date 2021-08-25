@@ -4,10 +4,7 @@ import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 
 
 class ErrorMessage extends React.Component  {
-
-
     render() {
-        const {hasGlobalMessage, showLeaderBoard, handleLeaderBoard} = this.props;
         return (
             <div class="alert alert-warning alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>

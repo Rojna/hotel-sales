@@ -27,6 +27,14 @@
 .leaderboard h4 {
    font-size : 1.25rem;
 }
+.leaderboard h1 {
+    font-family: Montserrat-Medium,"Verdana",sans-serif;
+    color: #050033;
+    font-weight: 600;
+}
+.leaderboard .rankingTile {
+    border-left: 3px solid #EC6527
+}
 
 .leaderboard .react-datepicker-wrapper {
     display: block;

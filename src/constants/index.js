@@ -22,6 +22,7 @@ export const PRICELEVEL_DISCOUNT_TH = "hotelTH";
 export const PRICELEVEL_DISCOUNT_VN = "hotelVN";
 export const PRICELEVEL_DISCOUNT_MY = "hotelMY";
 export const PRICELEVEL_DISCOUNT_ID = "hotelID";
+export const PRICELEVEL_DISCOUNT_SG = "hotelSG";
 
 export const COUNTRYCODES = [
     'en', 
